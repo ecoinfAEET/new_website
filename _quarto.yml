@@ -1,0 +1,52 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Ecoinformática-AEET"
+  twitter-card: true
+  site-url: https://ecoinf.quarto.pub/iecoinf/
+  back-to-top-navigation: true
+  navbar:
+    left:
+      - href: index.qmd
+        text: Inicio
+      - href: miembros.qmd
+        text: Miembros
+      - href: notas-ecoinformaticas.qmd
+        text: Notas Ecoinformáticas
+      - href: seminarios.qmd
+        text: Seminarios
+      - text: Actividades
+        menu:
+          - text: "Symposium 2017"
+            href: activ_symposium_2017.qmd
+          - text: "Reproducibilidad"
+            href: activ_reproducibilidad.qmd
+          - text: "Actividades MEDECOS 2017"
+            href: activ_medecos2017.qmd
+          - text: "I Jornadas de Ecoinformática"
+            href: jornadas.qmd
+  search: 
+    location: navbar
+    type: textbox
+  page-footer: 
+    center: 
+      - icon: twitter
+        href: https://twitter.com/ecoinf_aeet
+      - href: https://ecoinfaeet.github.io/website/
+        text: Ecoinformática-AEET
+      - icon: github
+        href: https://github.com/ecoinfAEET
+    background: rgb(120, 194, 173)
+
+format:
+  html:
+    link-external-newwindow: true
+    theme: minty
+    css: styles.css
+    toc: true
+    linkcolor: rebeccapurple
+    page-layout: full
+
+

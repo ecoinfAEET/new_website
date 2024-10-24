@@ -1,0 +1,6 @@
+- source: project
+  quarto-pub:
+    - id: 22a3edb6-3d80-4ae2-ba7d-6b0bdc01922b
+      url: 'https://julenasti.quarto.pub/iecoinf'
+    - id: eeedf54f-6fad-4bd8-99dd-8a8256340e2a
+      url: 'https://ecoinf.quarto.pub/iecoinf'
