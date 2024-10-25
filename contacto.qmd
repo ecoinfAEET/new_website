@@ -29,8 +29,6 @@ title: "Contacto"
 </div>
 
 
-Gracias por visitar mi página de contacto. ¡No dudes en conectarte!
-
 -   Intercambio de experiencias y conocimientos a través de [Slack](https://ecoinformatica-aeet.slack.com), la [lista de correo](https://groups.google.com/forum/#!forum/ecoinformatica_aeet), [twitter](https://twitter.com/ecoinf_aeet), etc.
 
 <br>
