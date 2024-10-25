@@ -1,22 +1,33 @@
 ---
 title: "Contacto"
-about:
-  template: trestles
-  links:
-    - icon: github
-      href: https://github.com
-    - icon: twitter
-      href: https://twitter.com
-
 ---
 
-# Contacto
+<style>
+.icon-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* Aumenta el espacio entre los iconos */
+  margin-top: 20px;
+  padding: 20px;
+}
 
-Puedes encontrarme en diferentes redes sociales:
+.icon {
+  width: 50px;
+  transition: transform 0.2s;
+}
 
-- [GitHub](https://github.com)
-- [Twitter](https://twitter.com)
-- [LinkedIn](https://linkedin.com)
+.icon:hover {
+  transform: scale(1.1);
+}
+</style>
+
+<div class="icon-container">
+  <a href="https://www.youtube.com/@ecoinformaticaaeet6681"><img src="assets/logos/youtube.png" alt="Youtube" class="icon"></a>
+  <a href="https://twitter.com/ecoinf_aeet"><img src="assets/logos/twitter.png" alt="Twitter" class="icon"></a>
+  <a href="https://github.com/ecoinfAEET"><img src="assets/logos/github.png" alt="GitHub" class="icon"></a>
+  <a href="https://ecoinformatica-aeet.slack.com/"><img src="assets/logos/slack.png" alt="Slack" class="icon"></a>
+</div>
+
 
 Gracias por visitar mi página de contacto. ¡No dudes en conectarte!
 
