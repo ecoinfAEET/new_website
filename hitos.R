@@ -2,17 +2,19 @@
 library(ggplot2)
 library(scales)
 library(lubridate)
+library(readxl)
 
-df <- 
+df <- read_xlsx("input_hitos.xlsx")
 
 df$date <- with(df, ymd(sprintf('%04d%02d%02d', year, month, 1)))
 df <- df[with(df, order(date)), ]
 head(df)
 
-status_levels <- c("Complete", "On Target", "At Risk", "Critical")
-status_colors <- c("#0070C0", "#00B050", "#FFC000", "#C00000")
+type_levels <- unique(df$type)
+type_colors <- c("#2C5530", "#739E82", "#669BBC", "#D38B5D")
+#99621E en caso de que tengamos otra categoria usamos este color :)
 
-df$status <- factor(df$status, levels=status_levels, ordered=TRUE)
+df$type <- factor(df$type, levels=type_levels, ordered=TRUE)
 
 
 positions <- c(0.5, -0.5, 1.0, -1.0, 1.5, -1.5)
@@ -25,7 +27,7 @@ line_pos <- data.frame(
 )
 
 df <- merge(x=df, y=line_pos, by="date", all = TRUE)
-df <- df[with(df, order(date, status)), ]
+df <- df[with(df, order(date, type)), ]
 
 head(df)
 
@@ -57,9 +59,9 @@ year_df <- data.frame(year_date_range, year_format)
 
 #### PLOT ####
 
-timeline_plot<-ggplot(df,aes(x=date,y=0, col=status, label=milestone))
+timeline_plot<-ggplot(df,aes(x=date,y=0, col=type))
 timeline_plot<-timeline_plot+labs(col="Milestones")
-timeline_plot<-timeline_plot+scale_color_manual(values=status_colors, labels=status_levels, drop = FALSE)
+timeline_plot<-timeline_plot+scale_color_manual(values=type_colors, labels=type_levels, drop = FALSE)
 timeline_plot<-timeline_plot+theme_classic()
 
 # Plot horizontal black line for timeline
@@ -85,10 +87,33 @@ timeline_plot<-timeline_plot+theme(axis.line.y=element_blank(),
 )
 
 # Show text for each month
-timeline_plot<-timeline_plot+geom_text(data=month_df, aes(x=month_date_range,y=-0.1,label=month_format),size=2.5,vjust=0.5, color='black', angle=90)
+#timeline_plot<-timeline_plot+geom_text(data=month_df, aes(x=month_date_range,y=-0.1,label=month_format),size=2.5,vjust=0.5, color='black', angle=90)
 # Show year text
-timeline_plot<-timeline_plot+geom_text(data=year_df, aes(x=year_date_range,y=-0.2,label=year_format, fontface="bold"),size=2.5, color='black')
+timeline_plot<-timeline_plot+geom_text(data=year_df, 
+                                       aes(x=year_date_range,y=-0.2,
+                                           label=year_format, fontface="bold"),
+                                       size=2.5, color='black')
 # Show text for each milestone
-timeline_plot<-timeline_plot+geom_text(aes(y=text_position,label=milestone),size=2.5)
+library(stringr)
+
+
+df$milestone <- factor(df$milestone, levels=unique(df$milestone), 
+                          labels=c("Creación del grupo de\n Ecoinformática",
+                                   "Primera nota ecoinformática", 
+                                   "V Aniversario del grupo", 
+                                   "Primer Seminario Ecoinformático", 
+                                   "Primeras Jornadas\n Ecoinformáticas"))
+
+l <- c("Creación del grupo de\n Ecoinformática",
+              "Primera nota ecoinformática", 
+              "V Aniversario del grupo", 
+              "Primer Seminario Ecoinformático", 
+              "Primeras Jornadas\n Ecoinformáticas")
+
+timeline_plot<-timeline_plot+geom_text(aes(y=text_position,
+                                           label= l),size=2.5)
+  
 print(timeline_plot)
 
+ggsave("plot_hitos.jpg", timeline_plot, dpi = 300, units = "cm", 
+       width = 30, height =10, limitsize = F)
