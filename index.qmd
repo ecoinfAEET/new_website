@@ -1,5 +1,5 @@
 ---
-pagetitle: "Ecoinformática - AEET"
+title: "Ecoinformática - AEET"
 ---
 
 <br>
