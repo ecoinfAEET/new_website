@@ -5,7 +5,7 @@ project:
 website:
   title: "Ecoinformática-AEET"
   twitter-card: true
-  site-url: https://ecoinf.quarto.pub/iecoinf/
+  site-url: https://ecoinfAEET.github.io/new_website/
   back-to-top-navigation: true
   navbar:
     left:
@@ -49,4 +49,5 @@ format:
     linkcolor: rebeccapurple
     page-layout: full
 
-
+execute:
+  freeze: auto
