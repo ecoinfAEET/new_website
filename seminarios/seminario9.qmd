@@ -1,0 +1,4 @@
+---
+title: "seminario9"
+editor: visual
+---
