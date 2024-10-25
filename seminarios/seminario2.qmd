@@ -1,0 +1,10 @@
+---
+title: "Seminario 2. Estadística bayesiana"
+editor: visual
+---
+
+-   Impartido por: Paloma Ruiz-Benito e Ignacio Morales-Castilla, Universidad de Alcalá (UAH), Madrid - grupo de EcoBayesUAH
+
+-   Resumen: Repaso de los beneficios en el uso de una aproximación de la estadística bayesiana, explicación general del teorema de Bayes, y uso de ejemplos conceptuales y prácticos.
+
+-   Fecha: 28 Febrero 2022
