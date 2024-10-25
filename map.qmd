@@ -1,0 +1,23 @@
+---
+title: "map"
+---
+
+
+``` {r echo = F , message = FALSE}
+library(leaflet)
+library(sf)
+library(htmltools)
+
+member.table <- read.csv(here::here("MembersInfo_coords.csv"))
+mem.ber <- member.table[!is.na(member.table$lat),]
+points <- st_as_sf(mem.ber, coords = c("lon", "lat"))
+
+
+
+leaflet(mem.ber) |> 
+  addTiles() |> 
+  addMarkers(popup = points, label = ~htmlEscape(Nombre),
+             labelOptions = labelOptions(noHide = F, direction = "auto")) |> 
+  addCircleMarkers()
+  
+```

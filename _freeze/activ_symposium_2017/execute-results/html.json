@@ -1,0 +1,15 @@
+{
+  "hash": "0ee9b981c882c943b34e94da2488c32d",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Ecoinformatics symposium at MEDECOS-AEET meeting\"\ndate: \"2016-06-09\"\n---\n\n\n<br>\n\nDear colleagues,\n\nWe are pleased to announce the symposium\n\n**Ecoinformatics: data science brings new avenues for ecology**\n\nat the XVI MEDECOS - XIII AEET meeting, 31 January – 4 February 2017, Seville, Spain.\n\nOpen access databases, open programming and advanced statistical methods are boosting the ability to solve complex long-standing questions in ecology. This symposium will bring together computational and theoretical ecologists, data scientists, and scientific programmers to showcase unique insights and conceptual advances made possible through ecoinformatics approaches.\n\nOur keynote speaker will be Dr. Roberto Salguero-Gómez (University of Sheffield, United Kingdom) who will talk about “low hanging fruits and future directions in comparative demography”.\n\nWe welcome contributions (both oral and posters) dealing with any aspect of ecoinformatics, including statistics, modelling, programming, and analysis of large ecological datasets. Please submit your abstract before 5th September 2016 through the meeting website.\n\nThe symposium is organised by the newly created AEET Ecoinformatics working group.\n\nFor more information please visit the conference website or write to ecoinf.aeet@gmail.com.\n\nLooking forward to your contributions and meeting you all in Sevilla next February!\n\nThe conveners,\n\nIgnasi Bartomeus, Sara Varela, Antonio J. Pérez-Luque y Francisco Rodríguez-Sánchez\n\n<br>\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](ecoinf_10.jpg){width=100%}\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
