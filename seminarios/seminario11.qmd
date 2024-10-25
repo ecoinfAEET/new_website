@@ -1,0 +1,4 @@
+---
+title: "seminario11"
+editor: visual
+---
