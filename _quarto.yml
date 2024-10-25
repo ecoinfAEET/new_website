@@ -27,6 +27,8 @@ website:
             href: activ_medecos2017.qmd
           - text: "I Jornadas de Ecoinformática"
             href: jornadas.qmd
+      - href: contacto.qmd
+        text: Contacto
   search: 
     location: navbar
     type: textbox
