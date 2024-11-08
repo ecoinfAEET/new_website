@@ -1,0 +1,82 @@
+---
+title: "Extraer coords de instituciones"
+author: "Elena Quintero"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r}
+library(here)
+library(dplyr)
+library(OpenStreetMap)
+library(RJSONIO)
+```
+
+
+```{r}
+member.table <- read.csv(here::here("MembersInfo.csv"))
+```
+
+```{r}
+institutions <- member.table |> 
+  distinct(Afiliación) |> 
+  mutate(af = stringr::str_replace_all(Afiliación, " ", "+"),
+         af = stringr::str_replace_all(af, ",", ""),
+         af = stringr::str_replace_all(af, "\n", "+"))
+```
+
+```{r}
+url = paste0(
+  "http://nominatim.openstreetmap.org/search?q=",
+  institutions$af[2], #"Universidad+California+Davis"
+  "&limit=9&format=json")
+
+resOSM = fromJSON(url)
+
+c(resOSM[[1]]$lon, resOSM[[1]]$lat)
+```
+
+```{r}
+locateAFF = function(afiliation) {
+  url = paste0(
+    "http://nominatim.openstreetmap.org/search?q=",
+    afiliation,
+    "&limit=9&format=json")
+  resOSM = fromJSON(url)
+  if(length(resOSM) > 0) {
+    return(c(resOSM[[1]]$lon, resOSM[[1]]$lat))
+  } else return(rep(NA,2)) 
+}
+
+#Try function:
+#locateAFF(institutions$af[3])
+
+coords <- lapply(institutions$af, locateAFF)
+
+df.coords <- t(as.data.frame(coords))
+
+institutions$lon <- df.coords[,1]
+institutions$lat <- df.coords[,2]
+
+head(institutions)[,-2]
+```
+
+```{r}
+library(leaflet)
+library(sf)
+library(htmltools)
+
+points <- institutions |> 
+  filter(!is.na(lon)) |> 
+  st_as_sf(coords = c("lon", "lat"))
+
+leaflet(points) |> 
+  addTiles() |> 
+  addMarkers(popup = points, 
+             label = ~htmlEscape(Afiliación),
+             labelOptions = labelOptions(noHide = F, direction = "auto")) |> 
+  addCircleMarkers()
+  
+```
+
+
