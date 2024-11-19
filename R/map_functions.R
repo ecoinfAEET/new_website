@@ -1,8 +1,7 @@
-# 
-# library(here)
-# library(dplyr)
-# library(OpenStreetMap)
-# library(RJSONIO)
+library(here)
+library(dplyr)
+library(OpenStreetMap)
+library(RJSONIO)
 
 format_member_table <- function(member_table){
   member_table$inst <- gsub(" ", "+", member_table$Institución)
