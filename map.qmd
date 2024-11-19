@@ -8,8 +8,9 @@ library(leaflet)
 library(sf)
 library(htmltools)
 
-member.table <- read.csv(here::here("MembersInfo_coords.csv"))
-mem.ber <- member.table[!is.na(member.table$lat),]
+member.table <- gsheet::gsheet2tbl("1tRlCcIxurHIDg-CCHsFFbkD3e4YkiDlA3PkFlTcBlk8") 
+
+member <- member.table[!is.na(member.table$lat),]
 points <- st_as_sf(mem.ber, coords = c("lon", "lat"))
 
 
