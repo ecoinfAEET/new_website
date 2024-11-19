@@ -16,7 +16,10 @@ type_levels <- unique(df$type)
 type_colors <- c("#2C5530", "#739E82", "#669BBC", "#D38B5D")
 #99621E en caso de que tengamos otra categoria usamos este color :)
 
-df$type <- factor(df$type, levels=type_levels, ordered=TRUE)
+df$type <- factor(
+  df$type, 
+  levels=type_levels, 
+  ordered=TRUE)
 
 
 positions <- c(.02, -0.02, 0.02, -0.02, 0.02, -0.02)
@@ -37,7 +40,9 @@ head(df)
 text_offset <- 0.005
 
 df$month_count <- ave(df$date==df$date, df$date, FUN=cumsum)
-df$text_position <- (df$month_count * text_offset * df$direction) + df$position
+df$text_position <- 
+  (df$month_count * text_offset * df$direction) + 
+  df$position
 head(df)
 
 
@@ -63,19 +68,19 @@ year_df <- data.frame(year_date_range, year_format)
 # Show text for each milestone
 library(stringr)
 
-l <- c("Creación del grupo de\n Ecoinformática",
-       "Primera nota ecoinformática", 
-       "V Aniversario del grupo", 
-       "Primer Seminario Ecoinformático", 
-       "Primeras Jornadas\n Ecoinformáticas")
+  # c("Creación del grupo de\n Ecoinformática",
+  #      "Primera nota ecoinformática", 
+  #      "V Aniversario del grupo", 
+  #      "Primer Seminario Ecoinformático", 
+  #      "Primeras Jornadas\n Ecoinformáticas")
 
 timeline_plot <- 
   df |> 
-  ggplot(aes(x=date,y=0, col=type)) +
-  labs(col="Milestones") +
+  ggplot(aes(x=date, y = 0 , col = type)) +
+  labs(col="type") +
   scale_color_manual(
-    values=type_colors, 
-    labels=type_levels, 
+    values = type_colors, 
+    labels = type_levels, 
     drop = FALSE) +
   theme_classic() +
   # Plot horizontal black line for timeline
@@ -116,7 +121,8 @@ timeline_plot <-
     size = 2.5, color='black'
   ) +  
   geom_text(
-    aes(y = text_position, label= l),
+    aes(y = text_position, label = df$type
+    ),
     size = 3
   ) +
   theme(legend.title = element_blank())
