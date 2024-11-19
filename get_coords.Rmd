@@ -14,69 +14,99 @@ library(RJSONIO)
 
 
 ```{r}
-member.table <- read.csv(here::here("MembersInfo.csv"))
+member.table <- gsheet::gsheet2tbl("1tRlCcIxurHIDg-CCHsFFbkD3e4YkiDlA3PkFlTcBlk8") 
+
+only_inst <- member.table |> 
+  dplyr::distinct(Institución, Ciudad, País)
+
+only_inst$inst <- gsub(" ", "+", only_inst$Institución)
+only_inst$city <- gsub(" ", "+", only_inst$city)
+only_inst$country <- gsub(" ", "+", only_inst$País)
+
+
+df_members <- member.table |> 
+  #distinct(Institución, Ciudad, País) |> 
+  dplyr::mutate(inst = stringr::str_replace_all(Institución, " ", "+"),
+         inst = stringr::str_replace_all(inst, "-", ""),
+         inst = stringr::str_replace_all(inst, ",", ""),
+         inst = stringr::str_replace_all(inst, "\n", "+")) |> 
+  dplyr::mutate(city = stringr::str_replace_all(`Ciudad`, " ", "+"),
+         city = stringr::str_replace_all(city, "-", ""),
+         city = stringr::str_replace_all(city, ",", "")) |> 
+  dplyr::mutate(country = stringr::str_replace_all(País, " ", "+"),
+         country = stringr::str_replace_all(country, "-", ""),
+         country = stringr::str_replace_all(country, ",", ""))
+```
+
+
+```{r}
+# df_members <- data.frame(inst = c("CREAF",
+#                                   "EBD",
+#                                   "Estacion+Biologica+de+Doñana"),
+#                          city = c("Barcelona",
+#                                   "Sevilla",
+#                                   "Sevilla"),
+#                          country = c("Spain",
+#                                   "Spain",
+#                                   "Spain"))
 ```
 
 ```{r}
-institutions <- member.table |> 
-  distinct(Afiliación) |> 
-  mutate(af = stringr::str_replace_all(Afiliación, " ", "+"),
-         af = stringr::str_replace_all(af, ",", ""),
-         af = stringr::str_replace_all(af, "\n", "+"))
-```
-
-```{r}
-url = paste0(
-  "http://nominatim.openstreetmap.org/search?q=",
-  institutions$af[2], #"Universidad+California+Davis"
-  "&limit=9&format=json")
-
-resOSM = fromJSON(url)
-
-c(resOSM[[1]]$lon, resOSM[[1]]$lat)
-```
-
-```{r}
-locateAFF = function(afiliation) {
-  url = paste0(
-    "http://nominatim.openstreetmap.org/search?q=",
-    afiliation,
-    "&limit=9&format=json")
-  resOSM = fromJSON(url)
-  if(length(resOSM) > 0) {
+locate <- function(row) {
+  # First URL including the 'inst' field
+  url1 <- paste0(
+    "http://nominatim.openstreetmap.org/search?street=", 
+    row["inst"], 
+    "&city=", 
+    row["city"], 
+    "&country=", 
+    row["country"], 
+    "&limit=9&format=json"
+  )
+  
+  # Try the first API call
+  resOSM <- tryCatch({
+    fromJSON(url1)
+  }, error = function(e) {
+    list() # Return empty list on error
+  })
+  
+  # If first search has results, return coordinates
+  if (length(resOSM) > 0) {
     return(c(resOSM[[1]]$lon, resOSM[[1]]$lat))
-  } else return(rep(NA,2)) 
+  }
+  
+  # Secondary URL omitting the 'inst' field
+  url2 <- paste0(
+    "http://nominatim.openstreetmap.org/search?city=", 
+    row["city"], 
+    "&country=", 
+    row["country"], 
+    "&limit=9&format=json"
+  )
+  
+  # Try the second API call
+  resOSM2 <- tryCatch({
+    fromJSON(url2)
+  }, error = function(e) {
+    list() # Return empty list on error
+  })
+  
+  # If second search has results, return coordinates
+  if (length(resOSM2) > 0) {
+    return(c(resOSM2[[1]]$lon, resOSM2[[1]]$lat))
+  }
+  
+  # If both searches fail, return NA
+  return(rep(NA, 2))
 }
 
-#Try function:
-#locateAFF(institutions$af[3])
+# Apply the function row-wise
+coords <- t(apply(df_members, 1, locate)) |> 
+  as.data.frame()
 
-coords <- lapply(institutions$af, locateAFF)
 
-df.coords <- t(as.data.frame(coords))
-
-institutions$lon <- df.coords[,1]
-institutions$lat <- df.coords[,2]
-
-head(institutions)[,-2]
 ```
 
-```{r}
-library(leaflet)
-library(sf)
-library(htmltools)
-
-points <- institutions |> 
-  filter(!is.na(lon)) |> 
-  st_as_sf(coords = c("lon", "lat"))
-
-leaflet(points) |> 
-  addTiles() |> 
-  addMarkers(popup = points, 
-             label = ~htmlEscape(Afiliación),
-             labelOptions = labelOptions(noHide = F, direction = "auto")) |> 
-  addCircleMarkers()
-  
-```
 
 
