@@ -1,19 +1,9 @@
----
-title: "Extraer coords de instituciones"
-author: "Elena Quintero"
-date: "`r Sys.Date()`"
-output: html_document
----
+# 
+# library(here)
+# library(dplyr)
+# library(OpenStreetMap)
+# library(RJSONIO)
 
-```{r}
-library(here)
-library(dplyr)
-library(OpenStreetMap)
-library(RJSONIO)
-```
-
-
-```{r}
 format_member_table <- function(member_table){
   member_table$inst <- gsub(" ", "+", member_table$Institución)
   member_table$inst <- gsub(",|-|\n", " ", member_table$Institución)
@@ -23,12 +13,6 @@ format_member_table <- function(member_table){
   return(member_table)
 }
 
-member.table <- gsheet::gsheet2tbl("1tRlCcIxurHIDg-CCHsFFbkD3e4YkiDlA3PkFlTcBlk8") |>
-  format_member_table()
-
-```
-
-```{r}
 look_up <- function(row) {
   # First URL including the 'inst' field
   url1 <- paste0(
@@ -78,14 +62,17 @@ look_up <- function(row) {
   return(rep(NA, 2))
 }
 
+member.table <- gsheet::gsheet2tbl("1tRlCcIxurHIDg-CCHsFFbkD3e4YkiDlA3PkFlTcBlk8") |>
+  format_member_table()
+
 # Apply the function row-wise
-coords <- as.data.frame(t(apply(member.table, 1, locate)))
+coords <- as.data.frame(t(apply(member.table, 1, look_up)))
 
 colnames(coords)[colnames(coords) == "V1"] <- "lat"
 colnames(coords)[colnames(coords) == "V2"] <- "lon"
 
-coord_df <- cbind(only_inst, coords)
-```
+coord_df <- cbind(member.table, coords)
+
 
 
 
