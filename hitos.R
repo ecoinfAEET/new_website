@@ -95,7 +95,7 @@ timeline_plot <-
     color = 'black', linewidth = 0.2
   ) +
   # Plot scatter points at zero and date
-  geom_point(aes(y = 0), size = 3
+  geom_point(aes(y = 0), size = 3,
   )+
   # Don't show axes, appropriately position legend
   theme(
@@ -127,8 +127,9 @@ timeline_plot <-
   ) +
   theme(legend.title = element_blank())
 
-
 timeline_plot
+
+
 
 
 # Save #
