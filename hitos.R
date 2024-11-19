@@ -1,8 +1,10 @@
-####codigo linea de hitos####
+#### codigo linea de hitos####
 library(ggplot2)
 library(scales)
 library(lubridate)
 library(readxl)
+library(plotly)
+library(htmlwidgets)
 
 df <- read_xlsx("input_hitos.xlsx")
 
@@ -78,28 +80,28 @@ timeline_plot <-
   theme_classic() +
   # Plot horizontal black line for timeline
   geom_hline(
-    yintercept=0, 
+    yintercept = 0, 
     color = "black", linewidth=0.3
   ) +
   # Plot vertical segment lines for milestones
   geom_segment(
-    data=df[df$month_count == 1,], 
-    aes(y=position,yend=0,xend=date), 
-    color='black', linewidth=0.2
+    data = df[df$month_count == 1,], 
+    aes(y = position, yend = 0, xend = date), 
+    color = 'black', linewidth = 0.2
   ) +
   # Plot scatter points at zero and date
-  geom_point(aes(y=0), size=3
+  geom_point(aes(y = 0), size = 3
   )+
   # Don't show axes, appropriately position legend
   theme(
-    axis.line.y=element_blank(),
-    axis.text.y=element_blank(),
-    axis.title.x=element_blank(),
-    axis.title.y=element_blank(),
-    axis.ticks.y=element_blank(),
-    axis.text.x =element_blank(),
-    axis.ticks.x =element_blank(),
-    axis.line.x =element_blank(),
+    axis.line.y = element_blank(),
+    axis.text.y = element_blank(),
+    axis.title.x = element_blank(),
+    axis.title.y = element_blank(),
+    axis.ticks.y = element_blank(),
+    axis.text.x = element_blank(),
+    axis.ticks.x = element_blank(),
+    axis.line.x = element_blank(),
     legend.position = "bottom"
   ) +
   # Show text for each month
@@ -111,11 +113,11 @@ timeline_plot <-
         y = -0.004,
         label = year_format, 
         fontface = "bold"),
-    size=2.5, color='black'
-  )+
+    size = 2.5, color='black'
+  ) +  
   geom_text(
-    aes(y=text_position, label= l),
-    size=3
+    aes(y = text_position, label= l),
+    size = 3
   ) +
   theme(legend.title = element_blank())
 
