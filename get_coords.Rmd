@@ -14,45 +14,22 @@ library(RJSONIO)
 
 
 ```{r}
-member.table <- gsheet::gsheet2tbl("1tRlCcIxurHIDg-CCHsFFbkD3e4YkiDlA3PkFlTcBlk8") 
+format_member_table <- function(member_table){
+  member_table$inst <- gsub(" ", "+", member_table$Institución)
+  member_table$inst <- gsub(",|-|\n", " ", member_table$Institución)
+  member_table$city <- gsub(" ", "+", member_table$Ciudad)
+  member_table$country <- gsub(" ", "+", member_table$País)
+  member_table$afil_id <- paste(member_table$Institución, member_table$Ciudad, member_table$País, sep = "_")
+  return(member_table)
+}
 
-only_inst <- member.table |> 
-  dplyr::distinct(Institución, Ciudad, País)
+member.table <- gsheet::gsheet2tbl("1tRlCcIxurHIDg-CCHsFFbkD3e4YkiDlA3PkFlTcBlk8") |>
+  format_member_table()
 
-only_inst$inst <- gsub(" ", "+", only_inst$Institución)
-only_inst$city <- gsub(" ", "+", only_inst$city)
-only_inst$country <- gsub(" ", "+", only_inst$País)
-
-
-df_members <- member.table |> 
-  #distinct(Institución, Ciudad, País) |> 
-  dplyr::mutate(inst = stringr::str_replace_all(Institución, " ", "+"),
-         inst = stringr::str_replace_all(inst, "-", ""),
-         inst = stringr::str_replace_all(inst, ",", ""),
-         inst = stringr::str_replace_all(inst, "\n", "+")) |> 
-  dplyr::mutate(city = stringr::str_replace_all(`Ciudad`, " ", "+"),
-         city = stringr::str_replace_all(city, "-", ""),
-         city = stringr::str_replace_all(city, ",", "")) |> 
-  dplyr::mutate(country = stringr::str_replace_all(País, " ", "+"),
-         country = stringr::str_replace_all(country, "-", ""),
-         country = stringr::str_replace_all(country, ",", ""))
-```
-
-
-```{r}
-# df_members <- data.frame(inst = c("CREAF",
-#                                   "EBD",
-#                                   "Estacion+Biologica+de+Doñana"),
-#                          city = c("Barcelona",
-#                                   "Sevilla",
-#                                   "Sevilla"),
-#                          country = c("Spain",
-#                                   "Spain",
-#                                   "Spain"))
 ```
 
 ```{r}
-locate <- function(row) {
+look_up <- function(row) {
   # First URL including the 'inst' field
   url1 <- paste0(
     "http://nominatim.openstreetmap.org/search?street=", 
@@ -102,10 +79,12 @@ locate <- function(row) {
 }
 
 # Apply the function row-wise
-coords <- t(apply(df_members, 1, locate)) |> 
-  as.data.frame()
+coords <- as.data.frame(t(apply(member.table, 1, locate)))
 
+colnames(coords)[colnames(coords) == "V1"] <- "lat"
+colnames(coords)[colnames(coords) == "V2"] <- "lon"
 
+coord_df <- cbind(only_inst, coords)
 ```
 
 
