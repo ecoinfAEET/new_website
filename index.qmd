@@ -11,6 +11,7 @@ title: "Ecoinformática - AEET"
 knitr::include_graphics("ecoinf_10.jpg")
 ```
 
+<br>
 
 ```{r}
 #| out.width = "100%",
