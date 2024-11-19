@@ -17,7 +17,7 @@ type_colors <- c("#2C5530", "#739E82", "#669BBC", "#D38B5D")
 df$type <- factor(df$type, levels=type_levels, ordered=TRUE)
 
 
-positions <- c(0.5, -0.5, 1.0, -1.0, 1.5, -1.5)
+positions <- c(.02, -0.02, 0.02, -0.02, 0.02, -0.02)
 directions <- c(1, -1)
 
 line_pos <- data.frame(
@@ -32,7 +32,7 @@ df <- df[with(df, order(date, type)), ]
 head(df)
 
 
-text_offset <- 0.05
+text_offset <- 0.005
 
 df$month_count <- ave(df$date==df$date, df$date, FUN=cumsum)
 df$text_position <- (df$month_count * text_offset * df$direction) + df$position
@@ -64,12 +64,15 @@ timeline_plot<-timeline_plot+labs(col="Milestones")
 timeline_plot<-timeline_plot+scale_color_manual(values=type_colors, labels=type_levels, drop = FALSE)
 timeline_plot<-timeline_plot+theme_classic()
 
+
 # Plot horizontal black line for timeline
 timeline_plot<-timeline_plot+geom_hline(yintercept=0, 
                                         color = "black", size=0.3)
 
 # Plot vertical segment lines for milestones
-timeline_plot<-timeline_plot+geom_segment(data=df[df$month_count == 1,], aes(y=position,yend=0,xend=date), color='black', size=0.2)
+timeline_plot<-timeline_plot+geom_segment(data=df[df$month_count == 1,], 
+                                          aes(y=position,yend=0,xend=date), 
+                                          color='black', size=0.2)
 
 # Plot scatter points at zero and date
 timeline_plot<-timeline_plot+geom_point(aes(y=0), size=3)
@@ -90,19 +93,11 @@ timeline_plot<-timeline_plot+theme(axis.line.y=element_blank(),
 #timeline_plot<-timeline_plot+geom_text(data=month_df, aes(x=month_date_range,y=-0.1,label=month_format),size=2.5,vjust=0.5, color='black', angle=90)
 # Show year text
 timeline_plot<-timeline_plot+geom_text(data=year_df, 
-                                       aes(x=year_date_range,y=-0.2,
+                                       aes(x=year_date_range,y=-0.004,
                                            label=year_format, fontface="bold"),
                                        size=2.5, color='black')
 # Show text for each milestone
 library(stringr)
-
-
-df$milestone <- factor(df$milestone, levels=unique(df$milestone), 
-                          labels=c("Creación del grupo de\n Ecoinformática",
-                                   "Primera nota ecoinformática", 
-                                   "V Aniversario del grupo", 
-                                   "Primer Seminario Ecoinformático", 
-                                   "Primeras Jornadas\n Ecoinformáticas"))
 
 l <- c("Creación del grupo de\n Ecoinformática",
               "Primera nota ecoinformática", 
@@ -110,10 +105,11 @@ l <- c("Creación del grupo de\n Ecoinformática",
               "Primer Seminario Ecoinformático", 
               "Primeras Jornadas\n Ecoinformáticas")
 
-timeline_plot<-timeline_plot+geom_text(aes(y=text_position,
-                                           label= l),size=2.5)
+timeline_plot1<-timeline_plot+geom_text(aes(y=text_position,
+                                           label= l),size=3)+
+  theme(legend.title = element_blank())
   
-print(timeline_plot)
+print(timeline_plot1)
 
-ggsave("plot_hitos.jpg", timeline_plot, dpi = 300, units = "cm", 
-       width = 30, height =10, limitsize = F)
+ggsave("plot_hitos.jpg", timeline_plot1, dpi = 300, units = "cm", 
+       width = 33, height =8.9, limitsize = F)
