@@ -11,55 +11,21 @@ date: "2024-11-19"
 library(leaflet)
 library(sf)
 library(htmltools)
-
-member.table <- read.csv(here::here("MembersInfo.csv"))
-
-member.filt = member.table |> 
-  select(Nombre, Afiliación)
+source("R/map_functions.R")
 
 
-institutions <- member.table |> 
-  distinct(Afiliación) |> 
-  mutate(af = stringr::str_replace_all(Afiliación, " ", "+"),
-         af = stringr::str_replace_all(af, ",", ""),
-         af = stringr::str_replace_all(af, "\n", "+"))
 
-url = paste0(
-  "http://nominatim.openstreetmap.org/search?q=",
-  institutions$af[2], #"Universidad+California+Davis"
-  "&limit=9&format=json")
+member.table <- gsheet::gsheet2tbl("1tRlCcIxurHIDg-CCHsFFbkD3e4YkiDlA3PkFlTcBlk8") |>
+  format_member_table()
 
-resOSM = fromJSON(url)
+coords.table <- readr::read_csv("institutioncoords.csv") |> 
+  update_coord_table(member.table= member.table)
 
-c(resOSM[[1]]$lon, resOSM[[1]]$lat)
-
-locateAFF = function(afiliation) {
-  url = paste0(
-    "http://nominatim.openstreetmap.org/search?q=",
-    afiliation,
-    "&limit=9&format=json")
-  resOSM = fromJSON(url)
-  if(length(resOSM) > 0) {
-    return(c(resOSM[[1]]$lon, resOSM[[1]]$lat))
-  } else return(rep(NA,2)) 
-}
-
-#Try function:
-#locateAFF(institutions$af[3])
-
-coords <- lapply(institutions$af, locateAFF)
-
-df.coords <- t(as.data.frame(coords))
-
-institutions$lon <- df.coords[,1]
-institutions$lat <- df.coords[,2]
-
-head(institutions)[,-2]
+member.table.coords <- left_join(member.table, coords.table) 
 
 
-member.complete <- left_join(member.filt, institutions, by = "Afiliación")
 
-points <- member.complete |> 
+points <- member.table.coords |> 
   #filter(Afiliación=="Universidad Autónoma de Madrid") |> 
   filter(!is.na(lon)) |> 
   st_as_sf(coords = c("lon", "lat"))
@@ -71,5 +37,53 @@ leaflet(points) |>
              labelOptions = labelOptions(zoomAnimation = T),
              clusterOptions = markerClusterOptions())
    #addProviderTiles(Esri.WorldGrayCanvas")
+
+
+# member.filt = member.table |> 
+#   select(Nombre, Afiliación)
+# 
+# 
+# institutions <- member.table |> 
+#   distinct(Afiliación) |> 
+#   mutate(af = stringr::str_replace_all(Afiliación, " ", "+"),
+#          af = stringr::str_replace_all(af, ",", ""),
+#          af = stringr::str_replace_all(af, "\n", "+"))
+# 
+# url = paste0(
+#   "http://nominatim.openstreetmap.org/search?q=",
+#   institutions$af[2], #"Universidad+California+Davis"
+#   "&limit=9&format=json")
+# 
+# resOSM = fromJSON(url)
+# 
+# c(resOSM[[1]]$lon, resOSM[[1]]$lat)
+
+# locateAFF = function(afiliation) {
+#   url = paste0(
+#     "http://nominatim.openstreetmap.org/search?q=",
+#     afiliation,
+#     "&limit=9&format=json")
+#   resOSM = fromJSON(url)
+#   if(length(resOSM) > 0) {
+#     return(c(resOSM[[1]]$lon, resOSM[[1]]$lat))
+#   } else return(rep(NA,2)) 
+# }
+# 
+# #Try function:
+# #locateAFF(institutions$af[3])
+# 
+# coords <- lapply(institutions$af, locateAFF)
+# 
+# df.coords <- t(as.data.frame(coords))
+# 
+# institutions$lon <- df.coords[,1]
+# institutions$lat <- df.coords[,2]
+# 
+# head(institutions)[,-2]
+# 
+# 
+# member.complete <- left_join(member.filt, institutions, by = "Afiliación")
+
+
   
 ```

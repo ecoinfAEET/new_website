@@ -1,39 +1,32 @@
 ---
-title: "map"
+title: "Mapa de Miembros"
 ---
 
-``` {r echo = F , message = FALSE}
+``` {r echo = F , message = FALSE, warning = F}
+library(dplyr)
 library(leaflet)
 library(sf)
 library(htmltools)
-library(dplyr)
+source("R/map_functions.R")
 
-#member.table <- gsheet::gsheet2tbl("1tRlCcIxurHIDg-CCHsFFbkD3e4YkiDlA3PkFlTcBlk8") 
 
-# Read old list of members and paste coords
-coords <- readr::read_csv("institution_coords.csv")
 
-members.old <- readr::read_csv("MembersInfo.csv") 
+member.table <- gsheet::gsheet2tbl("1tRlCcIxurHIDg-CCHsFFbkD3e4YkiDlA3PkFlTcBlk8") |>
+  format_member_table()
 
-#remove manual coords
-members.old = members.old[-c(13,14)]
+coords.table <- readr::read_csv("institutioncoords.csv") |> 
+  update_coord_table(member.table= member.table)
+readr::write_csv(coords.table, "institutioncoords.csv")
 
-#paste coords obtained with function
-member.complete <- members.old |> 
-  dplyr::mutate(Institución = Afiliación,
-                Ciudad = NA,
-                País = NA)|> 
-  dplyr::mutate(afil_id = paste(Institución, Ciudad, País, sep = "_")) |> 
-  dplyr::left_join(coords)
-
-points <- member.complete |> 
-  dplyr::filter(!is.na(lon)) |> 
+member.table.coords <- left_join(member.table, coords.table) |> 
+  filter(!is.na(lon)) |> 
   st_as_sf(coords = c("lon", "lat"))
 
-leaflet(points) |> 
+
+leaflet(member.table.coords) |> 
   addTiles() |> 
   addMarkers(popup = points, 
-             label = ~(paste(Nombre, "\n", Institución)),
+             label = ~(Nombre),
              labelOptions = labelOptions(zoomAnimation = T),
              clusterOptions = markerClusterOptions())
    #addProviderTiles(Esri.WorldGrayCanvas")
