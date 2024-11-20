@@ -169,6 +169,8 @@ fixed_institutions <- institutions.list |>
 coords <- as.data.frame(t(apply(fixed_institutions, 1, look_up)))
 institutions.coords <- cbind(fixed_institutions, coords)
 
+readr::write_csv(institutions.coords, "institution_coords.csv")
+
 # Try mapping
 
 library(leaflet)

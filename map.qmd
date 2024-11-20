@@ -8,17 +8,32 @@ library(leaflet)
 library(sf)
 library(htmltools)
 
-member.table <- gsheet::gsheet2tbl("1tRlCcIxurHIDg-CCHsFFbkD3e4YkiDlA3PkFlTcBlk8") 
+#member.table <- gsheet::gsheet2tbl("1tRlCcIxurHIDg-CCHsFFbkD3e4YkiDlA3PkFlTcBlk8") 
 
-member <- member.table[!is.na(member.table$lat),]
-points <- st_as_sf(mem.ber, coords = c("lon", "lat"))
+# Read old list of members and paste coords
+coords <- readr::read_csv("institution_coords.csv")
 
+members.old <- readr::read_csv("MembersInfo.csv") |> 
+  select(-c(lon, lat)) |> 
+  mutate(Institución = Afiliación,
+         Ciudad = NA,
+         País = NA)
 
+member.complete <- members.old |> 
+  mutate(afil_id = paste(Institución, Ciudad, País, sep = "_")) |> 
+  left_join(coords)
 
-leaflet(mem.ber) |> 
+points <- member.complete |> 
+  filter(!is.na(lon)) |> 
+  st_as_sf(coords = c("lon", "lat"))
+
+leaflet(points) |> 
   addTiles() |> 
-  addMarkers(popup = points, label = ~htmlEscape(Nombre),
-             labelOptions = labelOptions(noHide = F, direction = "auto")) |> 
-  addCircleMarkers()
+  addMarkers(popup = points, 
+             label = ~(paste(Nombre, "\n", Institución)),
+             labelOptions = labelOptions(zoomAnimation = T),
+             clusterOptions = markerClusterOptions())
+   #addProviderTiles(Esri.WorldGrayCanvas")
+  
   
 ```
