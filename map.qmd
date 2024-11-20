@@ -2,29 +2,32 @@
 title: "map"
 ---
 
-
 ``` {r echo = F , message = FALSE}
 library(leaflet)
 library(sf)
 library(htmltools)
+library(dplyr)
 
 #member.table <- gsheet::gsheet2tbl("1tRlCcIxurHIDg-CCHsFFbkD3e4YkiDlA3PkFlTcBlk8") 
 
 # Read old list of members and paste coords
 coords <- readr::read_csv("institution_coords.csv")
 
-members.old <- readr::read_csv("MembersInfo.csv") |> 
-  select(-c(lon, lat)) |> 
-  mutate(Institución = Afiliación,
-         Ciudad = NA,
-         País = NA)
+members.old <- readr::read_csv("MembersInfo.csv") 
 
+#remove manual coords
+members.old = members.old[-c(13,14)]
+
+#paste coords obtained with function
 member.complete <- members.old |> 
-  mutate(afil_id = paste(Institución, Ciudad, País, sep = "_")) |> 
-  left_join(coords)
+  dplyr::mutate(Institución = Afiliación,
+                Ciudad = NA,
+                País = NA)|> 
+  dplyr::mutate(afil_id = paste(Institución, Ciudad, País, sep = "_")) |> 
+  dplyr::left_join(coords)
 
 points <- member.complete |> 
-  filter(!is.na(lon)) |> 
+  dplyr::filter(!is.na(lon)) |> 
   st_as_sf(coords = c("lon", "lat"))
 
 leaflet(points) |> 
