@@ -1,0 +1,15 @@
+{
+  "hash": "ffa2d527e5a93b58aa14fbb849377889",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Reproducibilidad\"\ndate: \"2016-07-06\"\n---\n\n\n\n\n\n<br>\n\n- Read our article on [‘Reproducible Science: What, Why, How’](https://doi.org/10.7818/ECOS.2016.25-2.11) (in Spanish)\n\n- Watch video: [Non-reproducible workflows: a horror movie](https://youtu.be/s3JldKoA0zw)\n\n- Links to many [resources and tutorials](https://github.com/ecoinfAEET/Reproducibilidad/blob/master/Recursos.Rmd) about reproducible research\n\n- Come to our workshops at MEDECOS-AEET meeting\n\n\n<br>\n\n\n\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](ecoinf_10.jpg){width=100%}\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

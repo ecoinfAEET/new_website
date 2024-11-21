@@ -1,0 +1,15 @@
+{
+  "hash": "3c4776b747fea68005006cb7890bbd6c",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Actividades del grupo de Ecoinformática en MEDECOS-AEET\"\ndate: \"2017-01-25\"\n---\n\n\n\n\n\n<br>\n\nEstas son las actividades que hemos preparado desde el grupo de Ecoinformática para el congreso MEDECOS-AEET de la semana que viene:\n\n- Simposio sobre ‘**Ecoinformatics: data science brings new avenues for ecology**’. Viernes 3 11:30 - 13:00.\n\n- Taller sobre ‘**Reproducible science with Rmarkdown**’. Viernes 3 14:00 - 15:30.\n\n- Taller sobre ‘**Easy collaboration and version control with Git and GitHub**’. Viernes 3 14:00 - 15:30.\n\n- ¡Y nuestra primera **asamblea**! El jueves 2 de 13:30 a 14:30 en el aula TIC1 del edificio CRAI (mapa)\n\nToda la información está en la página web del congreso: http://www.medecos-aeet-meeting2017.es/\n\n¡Esperamos vuestra participación!\n\n\n<br>\n\n\n\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](ecoinf_10.jpg){width=100%}\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

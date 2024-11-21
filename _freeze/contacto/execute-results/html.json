@@ -1,0 +1,15 @@
+{
+  "hash": "a06e5e2e972cb7f58679d13fbe6ec4df",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Contacto\"\n---\n\n\n\n\n\n<style>\n.icon-container {\n  display: flex;\n  justify-content: center;\n  gap: 40px; /* Aumenta el espacio entre los iconos */\n  margin-top: 20px;\n  padding: 20px;\n}\n\n.icon {\n  width: 50px;\n  transition: transform 0.2s;\n}\n\n.icon:hover {\n  transform: scale(1.1);\n}\n</style>\n\n<div class=\"icon-container\">\n  <a href=\"https://www.youtube.com/@ecoinformaticaaeet6681\"><img src=\"assets/logos/youtube.png\" alt=\"Youtube\" class=\"icon\"></a>\n  <a href=\"https://twitter.com/ecoinf_aeet\"><img src=\"assets/logos/twitter.png\" alt=\"Twitter\" class=\"icon\"></a>\n  <a href=\"https://github.com/ecoinfAEET\"><img src=\"assets/logos/github.png\" alt=\"GitHub\" class=\"icon\"></a>\n  <a href=\"https://ecoinformatica-aeet.slack.com/\"><img src=\"assets/logos/slack.png\" alt=\"Slack\" class=\"icon\"></a>\n</div>\n\n\n-   Intercambio de experiencias y conocimientos a través de [Slack](https://ecoinformatica-aeet.slack.com), la [lista de correo](https://groups.google.com/forum/#!forum/ecoinformatica_aeet), [twitter](https://twitter.com/ecoinf_aeet), etc.\n\n<br>\n\n**Coordinadores**\n\n-   [Julen Astigarraga](https://twitter.com/j_astigarraga)\n\n-   [Elena Quintero](https://twitter.com/elequinter)\n\n-   [Verónica Cruz Alonso](https://twitter.com/veruitter)\n\n<br>\n\n**Cómo participar**\n\nLa participación activa es un pilar fundamental dentro de este grupo de trabajo. Para ello hemos puesto a disposición diferentes canales de comunicación:\n\n-   La principal vía de comunicación entre nosotros es [Slack](https://ecoinformatica-aeet.slack.com). Ahí compartimos recursos, preguntamos dudas, organizamos actividades, etc. Aquí el enlace para unirse: https://join.slack.com/t/ecoinformatica-aeet/shared_invite/zt-11i2zvqwl-JJsoiJAf64ee5nzjCip~LA\n\n-   Date de alta en nuestro [directorio](miembros.html).\n\n-   Twitter: nuestro perfil en twitter es [ecoinf_aeet](https://twitter.com/ecoinf_aeet)\n\n-   Correo electrónico: también puedes contactar con nosotros a través del correo electrónico: [ecoinf.aeet\\@gmail.com](mailto:ecoinf.aeet@gmail.com){.email}\n\n-   Además tenemos una [lista de correo](https://groups.google.com/forum/#!forum/ecoinformatica_aeet), aunque priorizamos la comunicación via Slack.\n\n-   También utilizamos [GitHub](https://github.com/ecoinfaeet) donde alojamos diferentes repositorios e incluso nuestra web.\n\n<br>\n\n\n\n\n\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](ecoinf_10.jpg){width=100%}\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
