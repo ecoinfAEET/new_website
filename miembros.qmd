@@ -14,23 +14,24 @@ Para darte de alta rellena tus datos [aquí](https://docs.google.com/forms/d/e/1
 knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE)
 ```
 
-```{r}
-#| warning = F
 
-```
-
-
-```{r miembros, include=F, echo = F, eval = F}
+```{r miembros, include=F, echo = F}
 
 formdata <- gsheet::gsheet2tbl("https://docs.google.com/spreadsheets/d/1InBc8vpbZiQS9Bs8dDd2DPft8kJq4z0M7n0UeVPbP8g/edit?usp=sharing")
+source("miembros_functions.R")
+
+for(i in 1:nrow(formdata)){
+create_profile_qmd(formdata, i)
+}
+
 
 ```
 
 ---
 # title: "Participantes"
 listing:
-  - id: equipo
-    contents: "equipo/*.qmd"
+  - id: miembros
+    contents: "miembros/*.qmd"
     type: grid
     image-height: 225px
     grid-columns: 4
