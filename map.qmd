@@ -1,0 +1,40 @@
+---
+title: "Mapa de Miembros"
+---
+
+``` {r echo = F , message = FALSE, warning = F}
+library(dplyr)
+library(leaflet)
+library(sf)
+library(htmltools)
+source("R/map_functions.R")
+
+
+# read members' information from google sheet
+member.table <- gsheet::gsheet2tbl("1tRlCcIxurHIDg-CCHsFFbkD3e4YkiDlA3PkFlTcBlk8") |>
+  format_member_table()|> 
+  distinct()
+
+# read institution coordinates and only search for the new ones
+coords.table <- readr::read_csv("institutioncoords.csv") |> 
+  update_coord_table(member.table = member.table) |> 
+  distinct()
+
+# rewrite updated table of institutions coordinates
+readr::write_csv(coords.table, "institutioncoords.csv")
+
+# combine both table by its affiliation and add coordinates (POINTS)
+member.table.coords <- left_join(member.table, coords.table) |> 
+  filter(!is.na(lon)) |> 
+  st_as_sf(coords = c("lon", "lat"))
+
+# plot map
+leaflet(member.table.coords) |> 
+  addTiles() |> 
+  addMarkers(popup = ~(Institución), 
+             label = ~(Nombre),
+             labelOptions = labelOptions(zoomAnimation = T),
+             clusterOptions = markerClusterOptions())
+  
+  
+```

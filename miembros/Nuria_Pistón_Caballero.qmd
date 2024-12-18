@@ -1,0 +1,23 @@
+---
+title: Nuria Pistón Caballero
+sortby: 59
+subtitle: nuriapiston@gmail.com
+image: blank.png
+toc: false
+about: 
+  id: person-profile
+  template: jolla
+
+---
+
+:::{#person-profile}
+
+# Resumen de investigación:
+Mis intereses se centran en la comprensión de los procesos que generan y mantienen la diversidad de las características funcionales y la diversidad vegetal en la naturaleza. En términos generales, me interesa el estudio de los mecanismos de coexistencia de especies y cómo estas responderán al cambio climático, el estudio de los filtros abióticos y bióticos que estructuran las comunidades de plantas, y las interacciones planta-planta y planta suelo.
+
+#  Interés profesional dentro del grupo:
+Intercambiar ideas, consultas, crear una red que favorezca la colaboración.
+
+
+ 
+:::

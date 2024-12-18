@@ -1,0 +1,25 @@
+---
+title: Alberto
+sortby: 4
+subtitle: albertovelezmartin@gmail.com
+image: blank.png
+toc: false
+about: 
+  id: person-profile
+  template: jolla
+
+---
+
+:::{#person-profile}
+
+# Resumen de investigación:
+Soy un ecologista interesado en la restauración de ecosistemas degradados y la conservación de la biodiversidad.
+Aunque he trabajado principalmente en humedales costeros (marismas), tengo especial predilección por los ecosistemas forestales, fluviales y de montaña.
+Tengo experiencia en muestreos de campo, diseño de experimentos, análisis estadístico multivariado (con R principalmente) y SIG (ArcGIS y R).
+
+#  Interés profesional dentro del grupo:
+Buscar soluciones, resolver dudas y ayudar a otros con las suyas relacionadas con metodologías de estudios ecológicos. Mejorar competencias analíticas y estadísticas con R. Conocer personas para posibles colaboraciones.
+
+
+ 
+:::
