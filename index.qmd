@@ -72,6 +72,12 @@ La participación activa es un pilar fundamental dentro de este grupo de trabajo
 
 <br>
 
+```{=html}
+<div style="text-align: right;">
+<iframe src="clickable_plot_vertical.html" width="100%" height="600" style="border:none;"></iframe>
+</div>
+```
+
 ```{r}
 #| out.width = "100%",
 #| fig.height = 1,
