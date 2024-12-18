@@ -30,6 +30,9 @@ website:
   search: 
     location: navbar
     type: textbox
+  # page-header:
+  #   center: null
+  #   background: rgba(51,153,103,255)
   page-footer: 
     center: 
       - icon: twitter
@@ -38,7 +41,7 @@ website:
         text: Ecoinformática-AEET
       - icon: github
         href: https://github.com/ecoinfAEET
-    background: rgb(120, 194, 173)
+    background: rgba(51,153,103,255)
 
 format:
   html:
