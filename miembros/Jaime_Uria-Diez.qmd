@@ -1,0 +1,28 @@
+---
+title: Jaime Uria-Diez
+sortby: 36
+subtitle: jaime.uria.diez@slu.se
+image: blank.png
+toc: false
+about: 
+  id: person-profile
+  template: jolla
+
+---
+
+:::{#person-profile}
+
+# Resumen de investigación:
+I am a plant ecologist which uses spatial statistical approaches to disentangle how biotic and abiotic factors determine spatio-temporal pattern in plant species. 
+My actual post-doctoral project focus in the study of how tree crown moves in response to intra and inter species competition.
+I like modelling and applying different (new) statistical tools/ techniques to spatial data, being also very interested in LIDAR information.
+
+#  Interés profesional dentro del grupo:
+Compartir y aprender nuevas técnicas de análisis espaciales. Aplicarlo a circular statistics. 
+Como compartir script y que repositorios usar.
+RMarkDown
+
+
+
+ 
+:::

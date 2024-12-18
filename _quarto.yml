@@ -13,8 +13,6 @@ website:
         text: Inicio
       - href: miembros.qmd
         text: Miembros
-      - href: map.qmd
-        text: Mapa miembros
       - href: notas-ecoinformaticas.qmd
         text: Notas Ecoinformáticas
       - href: seminarios.qmd

@@ -8,11 +8,55 @@ Para darte de alta rellena tus datos [aquí](https://docs.google.com/forms/d/e/1
 
 <br>
 
+
 ```{r}
 #| label = "setup",
 #| include = FALSE
 knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE)
 ```
+
+
+
+``` {r echo = F , message = FALSE, warning = F}
+library(dplyr)
+library(leaflet)
+library(sf)
+library(htmltools)
+source("R/map_functions.R")
+
+
+# read members' information from google sheet
+member.table <- gsheet::gsheet2tbl("1tRlCcIxurHIDg-CCHsFFbkD3e4YkiDlA3PkFlTcBlk8") |>
+  format_member_table()|> 
+  distinct()
+
+# read institution coordinates and only search for the new ones
+coords.table <- readr::read_csv("institutioncoords.csv") |> 
+  update_coord_table(member.table = member.table) |> 
+  distinct()
+
+# rewrite updated table of institutions coordinates
+readr::write_csv(coords.table, "institutioncoords.csv")
+
+# combine both table by its affiliation and add coordinates (POINTS)
+member.table.coords <- left_join(member.table, coords.table) |> 
+  filter(!is.na(lon)) |> 
+  st_as_sf(coords = c("lon", "lat"))
+
+# plot map
+leaflet(member.table.coords) |> 
+  addTiles() |> 
+  addMarkers(popup = ~(Institución), 
+             label = ~(Nombre),
+             labelOptions = labelOptions(zoomAnimation = T),
+             clusterOptions = markerClusterOptions())
+  
+  
+```
+<br>
+<br>
+
+
 
 
 ```{r miembros, include=F, echo = F}
@@ -21,6 +65,9 @@ formdata <- gsheet::gsheet2tbl("https://docs.google.com/spreadsheets/d/1InBc8vpb
 source("miembros_functions.R")
 
 for(i in 1:nrow(formdata)){
+  name <- formdata[i,"Nombre", drop=T] |> 
+    gsub(pattern = " ", replacement = "_")
+  if(file.exists(paste0("miembros/", name, ".qmd"))){next}
 create_profile_qmd(formdata, i)
 }
 
@@ -34,12 +81,15 @@ listing:
     contents: "miembros/*.qmd"
     type: grid
     image-height: 225px
-    grid-columns: 4
+    grid-columns: 6
     sort: sortby
     fields: [image, title, subtitle, author]
     grid-item-align: center
     
 ---
+
+:::{#map}
+:::
 
 :::{#equipo}
 :::

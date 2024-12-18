@@ -1,0 +1,23 @@
+---
+title: Elena Carrió
+sortby: 23
+subtitle: elena.carrio@icloud.com
+image: blank.png
+toc: false
+about: 
+  id: person-profile
+  template: jolla
+
+---
+
+:::{#person-profile}
+
+# Resumen de investigación:
+Biología de la conservación de especies vegetales amenazadas, biología reproductiva y de la polinización, mecanismos de aislamiento reproductivo entre especies
+
+#  Interés profesional dentro del grupo:
+Interés en aplicar metodología de análisis informático, especialmente de análisis de datos espaciales y moleculares para la estimación del aislamiento ecogeográfico
+
+
+ 
+:::

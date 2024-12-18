@@ -1,0 +1,25 @@
+---
+title: Carlos Martínez Núñez
+sortby: 17
+subtitle: cmnunez@ujaen.es
+image: blank.png
+toc: false
+about: 
+  id: person-profile
+  template: jolla
+
+---
+
+:::{#person-profile}
+
+# Resumen de investigación:
+Cómo la heterogeneidad ambiental a diferentes escalas afecta a la biodiversidad y los servicios ecosistémicos provistos en el agroecosistema del olivar andaluz
+
+#  Interés profesional dentro del grupo:
+Programación con R
+Técnicas estadísticas emergentes
+Modelización de distribución de especies
+
+
+ 
+:::

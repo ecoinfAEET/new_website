@@ -1,0 +1,23 @@
+---
+title: Josep-Anton Morgui
+sortby: 43
+subtitle: jmorgui@ub.edu
+image: blank.png
+toc: false
+about: 
+  id: person-profile
+  template: jolla
+
+---
+
+:::{#person-profile}
+
+# Resumen de investigación:
+Distribución espacial y temporal de interacciones bioqeoquímicas: gases efecto invernadero y gases tóxicos.
+
+#  Interés profesional dentro del grupo:
+Compartir métodos y preguntas entre la ecologa funcional y los procesos de intercambio en la zona crítica
+
+
+ 
+:::
