@@ -44,12 +44,22 @@ member.table.coords <- left_join(member.table, coords.table) |>
   st_as_sf(coords = c("lon", "lat"))
 
 # plot map
+
+custom_icon <- makeIcon(
+  iconUrl = "location_custom.png",
+  iconWidth = 25, iconHeight = 30,
+  iconAnchorX = 12, iconAnchorY = 30
+)
+
+
+
 leaflet(member.table.coords) |> 
   addTiles() |> 
   addMarkers(popup = ~(Institución), 
              label = ~(Nombre),
              labelOptions = labelOptions(zoomAnimation = T),
-             clusterOptions = markerClusterOptions())
+             clusterOptions = markerClusterOptions(),
+             icon = custom_icon)
   
   
 ```
