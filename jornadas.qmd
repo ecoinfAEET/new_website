@@ -1,8 +1,9 @@
 ---
 title: "I Jornadas de Ecoinformática de la AEET"
-output:
-  html_document:
+format:
+  html:
     toc: true
+    toc-title: "Índice"
     css: styles.css
 ---
 

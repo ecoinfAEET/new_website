@@ -1,8 +1,9 @@
 ---
 title: "Seminarios"
-output:
-  html_document:
+format:
+  html:
     toc: true
+    toc-title: "Índice"
     css: styles.css
 ---
 

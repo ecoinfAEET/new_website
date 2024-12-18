@@ -1,8 +1,10 @@
 ---
 title: "Notas Ecoinformáticas"
-output: 
-  html_document: 
-    toc: no
+format:
+  html:
+    toc: true
+    toc-title: "Índice"
+    css: styles.css
 ---
 
 <br>
