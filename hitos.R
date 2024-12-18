@@ -76,67 +76,78 @@ library(stringr)
 
 timeline_plot <- 
   df |> 
-  ggplot(aes(x=date, y = 0 , col = type)) +
-  labs(col="type") +
+  ggplot(aes(y = date, x = 0, col = type)) + # Cambiamos x e y
+  labs(col = "type") +
   scale_color_manual(
     values = type_colors, 
     labels = type_levels, 
-    drop = FALSE) +
-  theme_classic() +
-  # Plot horizontal black line for timeline
-  geom_hline(
-    yintercept = 0, 
-    color = "black", linewidth=0.3
+    drop = FALSE
   ) +
-  # Plot vertical segment lines for milestones
-  geom_segment(
-    data = df[df$month_count == 1,], 
-    aes(y = position, yend = 0, xend = date), 
-    color = 'black', linewidth = 0.2
+  theme_classic() +
+  # Plot a longer vertical black line for timeline
+  geom_vline(
+    xintercept = 0, 
+    color = "black", linewidth = 0.3
   ) +
   # Plot scatter points at zero and date
-  geom_point(aes(y = 0), size = 3,
-  )+
+  geom_point(aes(x = 0), size = 3) +
+  # Extend x-axis range to make vertical line longer
+  scale_x_continuous(
+    limits = c(-0.03, 0.03),  # Ajusta los límites del eje X
+    expand = c(0, 0)          # Evita expansión adicional del eje
+  ) +
   # Don't show axes, appropriately position legend
   theme(
-    axis.line.y = element_blank(),
-    axis.text.y = element_blank(),
+    axis.line.x = element_blank(),
+    axis.text.x = element_blank(),
     axis.title.x = element_blank(),
     axis.title.y = element_blank(),
-    axis.ticks.y = element_blank(),
-    axis.text.x = element_blank(),
     axis.ticks.x = element_blank(),
-    axis.line.x = element_blank(),
-    legend.position = "bottom"
+    axis.text.y = element_blank(),
+    axis.ticks.y = element_blank(),
+    axis.line.y = element_blank(),
+    legend.title = element_blank(),
+    legend.position = "right" # Ajustar posición de la leyenda
   ) +
-  # Show text for each month
-  #timeline_plot<-timeline_plot+geom_text(data=month_df, aes(x=month_date_range,y=-0.1,label=month_format),size=2.5,vjust=0.5, color='black', angle=90)
-  # Show year text
+  # Adjust position of year text
   geom_text(
     data = year_df, 
-    aes(x = year_date_range, 
-        y = -0.004,
+    aes(y = year_date_range, 
+        x = -0.01,   # Cambia esta coordenada para ajustar la posición de las etiquetas
         label = year_format, 
         fontface = "bold"),
-    size = 2.5, color='black'
-  ) +  
-  geom_text(
-    aes(y = text_position, label = df$type
-    ),
-    size = 3
+    size = 2.5, color = 'black'
   ) +
   theme(legend.title = element_blank())
 
 timeline_plot
 
+interactive_plot <- ggplotly(timeline_plot)
 
+p_interactive <- interactive_plot %>%
+  layout(title = "") %>%
+  onRender("
+    function(el, x) {
+      el.on('plotly_click', function(data) {
+        var pointIndex = data.points[0].pointIndex; // Índice del punto clicado
+        var link = x.data[0].customdata[pointIndex]; // Obtener el enlace del punto
+        if (link) {
+          window.open(link); // Abrir el enlace en una nueva pestaña
+        }
+      });
+    }
+  ")
 
+p_interactive$x$data[[1]]$customdata <- df$link
 
-# Save #
-ggsave("plot_hitos.jpg", 
-       timeline_plot1, 
-       dpi = 300, 
-       units = "cm", 
-       width = 33, 
-       height =8.9, 
-       limitsize = F)
+# Guardar como archivo HTML 
+saveWidget(p_interactive, "clickable_plot_vertical.html")
+
+# # Save #
+# ggsave("plot_hitos.jpg", 
+#        timeline_plot1, 
+#        dpi = 300, 
+#        units = "cm", 
+#        width = 33, 
+#        height =8.9, 
+#        limitsize = F)
