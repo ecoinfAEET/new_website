@@ -8,15 +8,11 @@ output:
 
 <br>
 
-Nos hace ilusión informaros que estamos organizando las primeras jornadas ecoinformáticas de la AEET.
+Las I Jornadas de Ecoinformática de la AEET se celebraron en Alcalá de Henares (Madrid), el 24 y 25 de octubre de 2024 en la Escuela de Arquitectura del campus histórico de la Universidad de Alcalá.
 
-El propósito principal de las jornadas es crear un espacio para que los miembros del grupo de Ecoinformática y otras personas interesadas en manejo y análisis de datos, modelización o programación, puedan intercambiar investigaciones en ecología con un fuerte componente de análisis, avances metodológicos, herramientas informáticas e ideas innovadoras y así facilitar la colaboración interdisciplinar y el aprendizaje conjunto.
-
-Las jornadas tendrán lugar del **24 al 25 de Octubre en Alcalá de Henares** y ya están abiertas las inscripciones.
+El propósito principal de las jornadas fue crear un espacio para que los miembros del grupo de Ecoinformática y otras personas interesadas en manejo y análisis de datos, modelización o programación, pudieran intercambiar investigaciones en ecología con un fuerte componente de análisis, avances metodológicos, herramientas informáticas e ideas innovadoras y así facilitar la colaboración interdisciplinar y el aprendizaje conjunto.
 
 Para más información visita la página web de las jornadas: <https://ecoinf.quarto.pub/iecoinf/>
-
-¡Os animamos a todos a participar!
 
 <br>
 
