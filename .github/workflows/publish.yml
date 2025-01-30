@@ -26,8 +26,8 @@ jobs:
         with:
           cache: always
           dependencies: '"hard"'
-          # extra-packages: |
-          #   local::.
+          extra-packages: |
+            local::.
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
