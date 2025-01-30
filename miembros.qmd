@@ -32,7 +32,7 @@ member.table <- gsheet::gsheet2tbl("19J9P-is9eJWoDN7_agmSeu5S5YgD4JZIoe_FtZ-G3EQ
 
 # read institution coordinates and only search for the new ones
 coords.table <- readr::read_csv("institutioncoords.csv") |> 
-  update_coord_table(member.table = member.table[-1,]) |> 
+  update_coord_table(member.table = member.table) |> 
   distinct()
 
 # rewrite updated table of institutions coordinates
