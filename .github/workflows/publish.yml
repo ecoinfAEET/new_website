@@ -21,16 +21,13 @@ jobs:
       - uses: r-lib/actions/setup-r@v2
         with:
           use-public-rspm: true
-          install-r: true   ## will use frozen R version (to save time) unless set to true
+          install-r: true   
           
       - name: Install packages
         uses: r-lib/actions/setup-r-dependencies@v2
         with:
           packages: gsheet, fontawesome, leaflet, RJSONIO
-          dependencies: '"hard"'
-
-      # - name: Set up Quarto
-      #   uses: quarto-dev/quarto-actions/setup@v2
+          # dependencies: '"hard"'
 
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
