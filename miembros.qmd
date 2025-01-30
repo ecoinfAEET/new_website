@@ -68,7 +68,7 @@ custom_icon <- leaflet::makeIcon(
 leaflet(member.table.coords) |> 
   addTiles(options = providerTileOptions(noWrap = TRUE)) |> 
   addMarkers(popup = ~(weblink), 
-             label = ~(`Nombre y apellidos`),
+             label = member.table.coords$`Nombre y apellidos`,
              # labelOptions = labelOptions(zoomAnimation = TRUE),  # deprecated
              clusterOptions = markerClusterOptions(),
              icon = custom_icon)
