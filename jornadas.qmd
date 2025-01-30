@@ -21,5 +21,5 @@ Para más información visita la página web de las jornadas: <https://ecoinf.qu
 #| out.width = "100%",
 #| fig.height = 1,
 #| echo = FALSE
-knitr::include_graphics("ecoinf_10.jpg")
+knitr::include_graphics("images/ecoinf_10.jpg")
 ```

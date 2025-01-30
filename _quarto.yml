@@ -1,6 +1,6 @@
 project:
   type: website
-  output-dir: docs
+  # output-dir: docs
 
 website:
   title: "Ecoinformática-AEET"
@@ -11,8 +11,8 @@ website:
     left:
       - href: index.qmd
         text: Inicio
-      - href: miembros.qmd
-        text: Miembros
+      # - href: miembros.qmd
+      #   text: Miembros
       - href: notas-ecoinformaticas.qmd
         text: Notas Ecoinformáticas
       - href: seminarios.qmd

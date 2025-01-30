@@ -17,6 +17,6 @@ date: "2016-07-06"
 #| out.width = "100%",
 #| fig.height = 1,
 #| echo = FALSE
-knitr::include_graphics("ecoinf_10.jpg")
+knitr::include_graphics("images/ecoinf_10.jpg")
 ```
 
