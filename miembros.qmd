@@ -49,7 +49,8 @@ member.table.coords <- merge(member.table, coords.table, all.x = TRUE) |>
   # st_as_sf(coords = c("lon", "lat")) |> 
 member.table.coords$weblink <- paste0('<a href="', 
                          'https://ecoinfaeet.github.io/new_website/miembros/', 
-                         gsub(" ", "_", member.table.coords$`Nombre y apellidos`),
+                         iconv(gsub(" ", "_", member.table.coords$`Nombre y apellidos`), 
+                               from = 'UTF-8', to = 'ASCII//TRANSLIT'),
                          ".html",
                          '" target="_blank">', member.table.coords$`Nombre y apellidos`, 
                          '</a>')
@@ -82,11 +83,12 @@ leaflet(member.table.coords) |>
 ```{r miembros, include=F, echo = F}
 
 formdata <- gsheet::gsheet2tbl("https://docs.google.com/spreadsheets/d/19J9P-is9eJWoDN7_agmSeu5S5YgD4JZIoe_FtZ-G3EQ/edit?usp=sharing")
-source("miembros_functions.R")
+source("R/miembros_functions.R")
 
 for (i in 1:nrow(formdata)){
   name <- formdata[i,"Nombre y apellidos", drop=TRUE] |> 
-    gsub(pattern = " ", replacement = "_")
+    gsub(pattern = " ", replacement = "_") |> 
+    iconv(from = 'UTF-8', to = 'ASCII//TRANSLIT')
   if (file.exists(paste0("miembros/", name, ".qmd"))) {next}
 create_profile_qmd(formdata, i)
 }

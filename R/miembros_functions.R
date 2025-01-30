@@ -39,7 +39,7 @@ create_profile_qmd <- function(form.table, row){
   }
   
   ord    <- which(sort(formdata$`Nombre y apellidos`) == name)[1]
-  qmdname <- paste0(gsub(" ", "_", name), ".qmd")
+  # qmdname <- paste0(gsub(" ", "_", name), ".qmd")
   
   # if(!(file.exists(paste0("miembros/",qmdname)))){
   # mejor re-renderizar para asegurar el orden ?
@@ -68,7 +68,9 @@ create_profile_qmd <- function(form.table, row){
     ":::"
   )
   
-  writeLines(txt, paste0("miembros/", qmdname))
+  writeLines(txt, paste0("miembros/", 
+                         iconv(gsub(" ", "_", name), from = 'UTF-8', to = 'ASCII//TRANSLIT'), 
+                         ".qmd"))
   
   # }
 }    
