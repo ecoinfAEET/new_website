@@ -13,6 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -22,12 +23,10 @@ jobs:
           use-public-rspm: true
           install-r: true   ## will use frozen R version (to save time) unless set to true
           
-      - uses: r-lib/actions/setup-r-dependencies@v2
+      - name: Install packages
+        uses: r-lib/actions/setup-r-dependencies@v2
         with:
-          cache: always
-          dependencies: '"hard"'
-          extra-packages: |
-            local::.
+          packages: gsheet, fontawesome, leaflet
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
