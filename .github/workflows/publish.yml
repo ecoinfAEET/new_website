@@ -21,6 +21,13 @@ jobs:
         with:
           use-public-rspm: true
           install-r: true   ## will use frozen R version (to save time) unless set to true
+          
+      - uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          cache: always
+          dependencies: '"hard"'
+          extra-packages: |
+            local::.
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
