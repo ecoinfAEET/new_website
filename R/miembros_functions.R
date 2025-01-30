@@ -5,7 +5,7 @@ create_profile_qmd <- function(form.table, row){
   
   pers.table <- as.data.frame(form.table[row,])
   
-  name   <- pers.table[,"Nombre y apellidos"]
+  name   <- pers.table$`Nombre y apellidos`
   email  <- pers.table[,"Email"]
   inves  <- pers.table[,"Resumen investigación (max. 3 frases)"]
   inter  <- pers.table[,"Intereses dentro del grupo (max. 4 intereses)"]
