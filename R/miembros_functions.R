@@ -6,12 +6,12 @@ create_profile_qmd <- function(form.table, row){
   pers.table <- as.data.frame(form.table[row,])
   
   name   <- pers.table$`Nombre y apellidos`
-  email  <- pers.table[,"Email"]
-  inves  <- pers.table[,"Resumen investigación (max. 3 frases)"]
-  inter  <- pers.table[,"Intereses dentro del grupo (max. 4 intereses)"]
-  web    <- pers.table[,"Pagina web"]
-  github <- pers.table[,"Cuenta de GitHub"]
-  social <- pers.table[,"Cuenta de Bluesky o Twitter"]
+  email  <- pers.table$`Email`
+  inves  <- pers.table$`Resumen investigación (max. 3 frases)`
+  inter  <- pers.table$`Intereses dentro del grupo (max. 4 intereses)`
+  web    <- pers.table$`Pagina web`
+  github <- pers.table$`Cuenta de GitHub`
+  social <- pers.table$`Cuenta de Bluesky o Twitter`
   
   github <- ifelse(grepl("https://", github), github, paste0("https://github.com/", github))
   
