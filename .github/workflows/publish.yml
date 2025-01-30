@@ -26,7 +26,7 @@ jobs:
       - name: Install packages
         uses: r-lib/actions/setup-r-dependencies@v2
         with:
-          packages: gsheet, fontawesome, leaflet
+          packages: gsheet, fontawesome, leaflet, RJSONIO
           dependencies: '"hard"'
 
       # - name: Set up Quarto
