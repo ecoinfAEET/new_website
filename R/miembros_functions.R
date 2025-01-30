@@ -21,11 +21,11 @@ create_profile_qmd <- function(form.table, row){
   
   icons <- " "    
   
-  if(!is.na(social)){icons <- paste0(icons, at.icon,"\t<", social, ">\t\t\n")}
-  if(!is.na(github)) {icons <- paste0(icons, gh.icon,"\t<", github , ">\t\t\n")} 
-  if(!is.na(web)) {icons <- paste0(icons, web.icon,"\t<", web , ">\t\t\n")} 
+  if (!is.null(social) & !is.na(social)) {icons <- paste0(icons, at.icon,"\t<", social, ">\t\t\n")}
+  if (!is.null(github) & !is.na(github)) {icons <- paste0(icons, gh.icon,"\t<", github , ">\t\t\n")} 
+  if (!is.null(web) & !is.na(web)) {icons <- paste0(icons, web.icon,"\t<", web , ">\t\t\n")} 
   
-  if(is.na(github)){
+  if (is.na(github)){
     if(!file.exists("images/blank.png")){
       png("images/blank.png", 100,100,res = 100, units = "mm")
       plot.new()
