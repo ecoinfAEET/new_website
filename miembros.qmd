@@ -18,41 +18,46 @@ knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE)
 
 
 ``` {r echo = F , message = FALSE, warning = F}
-library(dplyr)
+# library(dplyr)
+# library(sf)
+# library(htmltools)
+
 library(leaflet)
-library(sf)
-library(htmltools)
 source("R/map_functions.R")
 
 
 # read members' information from google sheet
 member.table <- gsheet::gsheet2tbl("19J9P-is9eJWoDN7_agmSeu5S5YgD4JZIoe_FtZ-G3EQ") |>
-  format_member_table()|> 
-  distinct()
+  format_member_table() |> 
+  unique()
+  # dplyr::distinct()
 
 # read institution coordinates and only search for the new ones
-coords.table <- readr::read_csv("institutioncoords.csv") |> 
+coords.table <- read.csv("institutioncoords.csv") |> 
   update_coord_table(member.table = member.table) |> 
-  distinct()
+  unique()
+  # dplyr::distinct()
 
 # rewrite updated table of institutions coordinates
-readr::write_csv(coords.table, "institutioncoords.csv")
+write.csv(coords.table, file = "institutioncoords.csv", 
+          quote = TRUE, row.names = FALSE, fileEncoding = "UTF-8")
 
 # combine both table by its affiliation and add coordinates (POINTS)
-member.table.coords <- left_join(member.table, coords.table) |> 
-  filter(!is.na(lon)) |> 
-  st_as_sf(coords = c("lon", "lat")) |> 
-  mutate(weblink =paste0('<a href="', 
+member.table.coords <- merge(member.table, coords.table, all.x = TRUE) |> 
+  subset(!is.na(lon))
+  # filter(!is.na(lon)) |> 
+  # st_as_sf(coords = c("lon", "lat")) |> 
+member.table.coords$weblink <- paste0('<a href="', 
                          'https://ecoinfaeet.github.io/new_website/miembros/', 
-                         gsub(" ", "_", `Nombre y apellidos`),
+                         gsub(" ", "_", member.table.coords$`Nombre y apellidos`),
                          ".html",
-                         '" target="_blank">', `Nombre y apellidos`, 
-                         '</a>'))
+                         '" target="_blank">', member.table.coords$`Nombre y apellidos`, 
+                         '</a>')
 
 # plot map
 
-custom_icon <- makeIcon(
-  iconUrl = "location_custom.png",
+custom_icon <- leaflet::makeIcon(
+  iconUrl = "images/location_custom.png",
   iconWidth = 25, iconHeight = 30,
   iconAnchorX = 12, iconAnchorY = 30
 )
@@ -63,7 +68,7 @@ leaflet(member.table.coords) |>
   addTiles(options = providerTileOptions(noWrap = TRUE)) |> 
   addMarkers(popup = ~(weblink), 
              label = ~(`Nombre y apellidos`),
-             labelOptions = labelOptions(zoomAnimation = T),
+             # labelOptions = labelOptions(zoomAnimation = TRUE),  # deprecated
              clusterOptions = markerClusterOptions(),
              icon = custom_icon)
   
@@ -79,10 +84,10 @@ leaflet(member.table.coords) |>
 formdata <- gsheet::gsheet2tbl("https://docs.google.com/spreadsheets/d/19J9P-is9eJWoDN7_agmSeu5S5YgD4JZIoe_FtZ-G3EQ/edit?usp=sharing")
 source("miembros_functions.R")
 
-for(i in 1:nrow(formdata)){
-  name <- formdata[i,"Nombre y apellidos", drop=T] |> 
+for (i in 1:nrow(formdata)){
+  name <- formdata[i,"Nombre y apellidos", drop=TRUE] |> 
     gsub(pattern = " ", replacement = "_")
-  if(file.exists(paste0("miembros/", name, ".qmd"))){next}
+  if (file.exists(paste0("miembros/", name, ".qmd"))) {next}
 create_profile_qmd(formdata, i)
 }
 
@@ -98,7 +103,7 @@ listing:
     image-height: 225px
     grid-columns: 6
     sort: sortby
-    fields: [image, title, subtitle, author]
+    fields: [image, title]
     grid-item-align: center
     
 ---

@@ -2,48 +2,48 @@
 
 create_profile_qmd <- function(form.table, row){
   
-    
-    pers.table <- as.data.frame(form.table[row,])
-   
-    name   <- pers.table[,"Nombre y apellidos"]
-    email  <- pers.table[,"Email"]
-    inves  <- pers.table[,"Resumen investigación (max. 3 frases)"]
-    inter  <- pers.table[,"Intereses dentro del grupo (max. 4 intereses)"]
-    web    <- pers.table[,"Pagina web"]
-    github <- pers.table[,"Cuenta de GitHub"]
-    social <- pers.table[,"Cuenta de Bluesky o Twitter"]
-    
-    github <- if_else(grepl("https://", github), github, paste0("https://github.com/", github))
-    
-    gh.icon <- fontawesome::fa(name = "github",  fill = "#71706F", height = "1em")
-    at.icon <- fontawesome::fa(name = "at", fill = "#71706F", height = "1em")
-    web.icon <- fontawesome::fa(name = "user", fill = "#71706F", height = "1em")
-
-    icons <- " "    
-    
-    if(!is.na(social)){icons <- paste0(icons, at.icon,"\t<", social, ">\t\t\n")}
-    if(!is.na(github)) {icons <- paste0(icons, gh.icon,"\t<", github , ">\t\t\n")} 
-    if(!is.na(web)) {icons <- paste0(icons, web.icon,"\t<", web , ">\t\t\n")} 
-
-        if(is.na(github)){
-      if(!file.exists("blank.png")){
-      png("blank.png", 100,100,res = 100, units = "mm")
+  
+  pers.table <- as.data.frame(form.table[row,])
+  
+  name   <- pers.table[,"Nombre y apellidos"]
+  email  <- pers.table[,"Email"]
+  inves  <- pers.table[,"Resumen investigación (max. 3 frases)"]
+  inter  <- pers.table[,"Intereses dentro del grupo (max. 4 intereses)"]
+  web    <- pers.table[,"Pagina web"]
+  github <- pers.table[,"Cuenta de GitHub"]
+  social <- pers.table[,"Cuenta de Bluesky o Twitter"]
+  
+  github <- ifelse(grepl("https://", github), github, paste0("https://github.com/", github))
+  
+  gh.icon <- fontawesome::fa(name = "github",  fill = "#71706F", height = "1em")
+  at.icon <- fontawesome::fa(name = "at", fill = "#71706F", height = "1em")
+  web.icon <- fontawesome::fa(name = "user", fill = "#71706F", height = "1em")
+  
+  icons <- " "    
+  
+  if(!is.na(social)){icons <- paste0(icons, at.icon,"\t<", social, ">\t\t\n")}
+  if(!is.na(github)) {icons <- paste0(icons, gh.icon,"\t<", github , ">\t\t\n")} 
+  if(!is.na(web)) {icons <- paste0(icons, web.icon,"\t<", web , ">\t\t\n")} 
+  
+  if(is.na(github)){
+    if(!file.exists("images/blank.png")){
+      png("images/blank.png", 100,100,res = 100, units = "mm")
       plot.new()
       dev.off()
-      }
-      image <- "blank.png"
-    }else{
-      ghuser <- gsub("https://", "", github)
-      ghuser <- gsub("github.com/", "", ghuser)
-      image <- paste0("https://github.com/", ghuser, ".png")
-      }
-    
-    ord    <- which(sort(formdata$`Nombre y apellidos`) == name)[1]
-    qmdname <- paste0(gsub(" ", "_", name), ".qmd")
-    
-    # if(!(file.exists(paste0("miembros/",qmdname)))){
-    # mejor re-renderizar para asegurar el orden ?
-      
+    }
+    image <- "images/blank.png"
+  }else{
+    ghuser <- gsub("https://", "", github)
+    ghuser <- gsub("github.com/", "", ghuser)
+    image <- paste0("https://github.com/", ghuser, ".png")
+  }
+  
+  ord    <- which(sort(formdata$`Nombre y apellidos`) == name)[1]
+  qmdname <- paste0(gsub(" ", "_", name), ".qmd")
+  
+  # if(!(file.exists(paste0("miembros/",qmdname)))){
+  # mejor re-renderizar para asegurar el orden ?
+  
   txt <- paste0(
     "---", "\n",
     "title: ", name,  "\n",
@@ -69,7 +69,7 @@ create_profile_qmd <- function(form.table, row){
   )
   
   writeLines(txt, paste0("miembros/", qmdname))
-      
+  
   # }
 }    
 
