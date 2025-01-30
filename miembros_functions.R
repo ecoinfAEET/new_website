@@ -11,16 +11,19 @@ create_profile_qmd <- function(form.table, row){
     inter  <- pers.table[,"Intereses dentro del grupo (max. 4 intereses)"]
     web    <- pers.table[,"Pagina web"]
     github <- pers.table[,"Cuenta de GitHub"]
-    twitter<- pers.table[,"Cuenta de Bluesky o Twitter"]
-    # bsky   <- pers.table[,"Cuenta de Bluesky"]
-     
-    gh.icon <- fontawesome::fa(name = "github",  fill = "#bfe6f5", height = "1em")
-    tw.icon <- fontawesome::fa(name = "twitter", fill = "#bfe6f5", height = "1em")
+    social <- pers.table[,"Cuenta de Bluesky o Twitter"]
     
-    icons <- " "
+    github <- if_else(grepl("https://", github), github, paste0("https://github.com/", github))
+    
+    gh.icon <- fontawesome::fa(name = "github",  fill = "#71706F", height = "1em")
+    at.icon <- fontawesome::fa(name = "at", fill = "#71706F", height = "1em")
+    web.icon <- fontawesome::fa(name = "user", fill = "#71706F", height = "1em")
 
-    if(!is.na(twitter)){icons <- paste0(icons, tw.icon,"\t", twitter, "\t\t")}
-    if(!is.na(github)) {icons <- paste0(icons, gh.icon,"\t", github , "\t\t")}    
+    icons <- " "    
+    
+    if(!is.na(social)){icons <- paste0(icons, at.icon,"\t<", social, ">\t\t\n")}
+    if(!is.na(github)) {icons <- paste0(icons, gh.icon,"\t<", github , ">\t\t\n")} 
+    if(!is.na(web)) {icons <- paste0(icons, web.icon,"\t<", web , ">\t\t\n")} 
 
         if(is.na(github)){
       if(!file.exists("blank.png")){
