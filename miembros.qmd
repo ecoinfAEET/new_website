@@ -41,7 +41,13 @@ readr::write_csv(coords.table, "institutioncoords.csv")
 # combine both table by its affiliation and add coordinates (POINTS)
 member.table.coords <- left_join(member.table, coords.table) |> 
   filter(!is.na(lon)) |> 
-  st_as_sf(coords = c("lon", "lat"))
+  st_as_sf(coords = c("lon", "lat")) |> 
+  mutate(weblink =paste0('<a href="', 
+                         'https://ecoinfaeet.github.io/new_website/miembros/', 
+                         gsub(" ", "_", `Nombre y apellidos`),
+                         ".html",
+                         '" target="_blank">', `Nombre y apellidos`, 
+                         '</a>'))
 
 # plot map
 
@@ -54,8 +60,8 @@ custom_icon <- makeIcon(
 
 
 leaflet(member.table.coords) |> 
-  addTiles() |> 
-  addMarkers(popup = ~(Institución), 
+  addTiles(options = providerTileOptions(noWrap = TRUE)) |> 
+  addMarkers(popup = ~(weblink), 
              label = ~(`Nombre y apellidos`),
              labelOptions = labelOptions(zoomAnimation = T),
              clusterOptions = markerClusterOptions(),
