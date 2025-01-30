@@ -5,13 +5,13 @@ create_profile_qmd <- function(form.table, row){
     
     pers.table <- as.data.frame(form.table[row,])
    
-    name   <- pers.table[,"Nombre"]
-    email  <- pers.table[,"Correo Electrónico"]
+    name   <- pers.table[,"Nombre y apellidos"]
+    email  <- pers.table[,"Email"]
     inves  <- pers.table[,"Resumen investigación (max. 3 frases)"]
-    inter  <- pers.table[,"Interés profesional dentro del grupo (max. 4 intereses)"]
+    inter  <- pers.table[,"Intereses dentro del grupo (max. 4 intereses)"]
     web    <- pers.table[,"Pagina web"]
     github <- pers.table[,"Cuenta de GitHub"]
-    twitter<- pers.table[,"Cuenta de Twitter"]
+    twitter<- pers.table[,"Cuenta de Bluesky o Twitter"]
     # bsky   <- pers.table[,"Cuenta de Bluesky"]
      
     gh.icon <- fontawesome::fa(name = "github",  fill = "#bfe6f5", height = "1em")
@@ -35,7 +35,7 @@ create_profile_qmd <- function(form.table, row){
       image <- paste0("https://github.com/", ghuser, ".png")
       }
     
-    ord    <- which(sort(formdata$Nombre) == name)[1]
+    ord    <- which(sort(formdata$`Nombre y apellidos`) == name)[1]
     qmdname <- paste0(gsub(" ", "_", name), ".qmd")
     
     # if(!(file.exists(paste0("miembros/",qmdname)))){

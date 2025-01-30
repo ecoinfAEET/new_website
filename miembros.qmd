@@ -4,7 +4,7 @@ title: "Miembros"
 
 Miembros del [grupo de Ecoinformática](http://www.aeet.org/es/gruposdetrabajo/ecoinformatica.html) de la [Asociación Española de Ecología Terrestre (AEET)](https://www.aeet.org/es/). 
 
-Para darte de alta rellena tus datos [aquí](https://docs.google.com/forms/d/e/1FAIpQLScCIlXvN2LtOkj1MNFPK-UzTfkK8jg5ZMXT0OgjyUUJdndo2Q/viewform?c=0&w=1). Si quieres actualizar o corregir un error en los datos por favor abre un 'issue' [en el repo](https://github.com/ecoinfAEET/website), haz un 'pull request' sobre el fichero de datos ([MembersInfo.csv](https://github.com/ecoinfAEET/website/blob/master/MembersInfo.csv)) o escribe a ecoinf.aeet@gmail.com.
+Para darte de alta rellena tus datos [aquí](https://forms.gle/bkCfSjERcDHsrLhx8). Si quieres actualizar o corregir un error en los datos por favor abre un 'issue' [en el repo](https://github.com/ecoinfAEET/website), haz un 'pull request' sobre el fichero de datos ([MembersInfo.csv](https://github.com/ecoinfAEET/website/blob/master/MembersInfo.csv)) o escribe a ecoinf.aeet@gmail.com.
 
 <br>
 
@@ -26,13 +26,13 @@ source("R/map_functions.R")
 
 
 # read members' information from google sheet
-member.table <- gsheet::gsheet2tbl("1tRlCcIxurHIDg-CCHsFFbkD3e4YkiDlA3PkFlTcBlk8") |>
+member.table <- gsheet::gsheet2tbl("19J9P-is9eJWoDN7_agmSeu5S5YgD4JZIoe_FtZ-G3EQ") |>
   format_member_table()|> 
   distinct()
 
 # read institution coordinates and only search for the new ones
 coords.table <- readr::read_csv("institutioncoords.csv") |> 
-  update_coord_table(member.table = member.table) |> 
+  update_coord_table(member.table = member.table[-1,]) |> 
   distinct()
 
 # rewrite updated table of institutions coordinates
@@ -56,7 +56,7 @@ custom_icon <- makeIcon(
 leaflet(member.table.coords) |> 
   addTiles() |> 
   addMarkers(popup = ~(Institución), 
-             label = ~(Nombre),
+             label = ~(`Nombre y apellidos`),
              labelOptions = labelOptions(zoomAnimation = T),
              clusterOptions = markerClusterOptions(),
              icon = custom_icon)
@@ -71,11 +71,11 @@ leaflet(member.table.coords) |>
 
 ```{r miembros, include=F, echo = F}
 
-formdata <- gsheet::gsheet2tbl("https://docs.google.com/spreadsheets/d/1InBc8vpbZiQS9Bs8dDd2DPft8kJq4z0M7n0UeVPbP8g/edit?usp=sharing")
+formdata <- gsheet::gsheet2tbl("https://docs.google.com/spreadsheets/d/19J9P-is9eJWoDN7_agmSeu5S5YgD4JZIoe_FtZ-G3EQ/edit?usp=sharing")
 source("miembros_functions.R")
 
 for(i in 1:nrow(formdata)){
-  name <- formdata[i,"Nombre", drop=T] |> 
+  name <- formdata[i,"Nombre y apellidos", drop=T] |> 
     gsub(pattern = " ", replacement = "_")
   if(file.exists(paste0("miembros/", name, ".qmd"))){next}
 create_profile_qmd(formdata, i)
