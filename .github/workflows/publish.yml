@@ -27,6 +27,7 @@ jobs:
         uses: r-lib/actions/setup-r-dependencies@v2
         with:
           packages: gsheet, fontawesome, leaflet
+          dependencies: '"hard"'
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
