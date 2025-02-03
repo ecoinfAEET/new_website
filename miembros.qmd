@@ -101,6 +101,7 @@ listing:
     grid-columns: 6
     fields: [image, title]
     grid-item-align: center
+    filter-ui: [title]
 ---
 
 ::: {#map}
