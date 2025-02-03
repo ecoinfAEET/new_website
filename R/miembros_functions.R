@@ -38,7 +38,7 @@ create_profile_qmd <- function(form.table, row){
     image <- paste0("https://github.com/", ghuser, ".png")
   }
   
-  ord    <- which(sort(formdata$`Nombre y apellidos`) == name)[1]
+  # ord    <- which(sort(formdata$`Nombre y apellidos`) == name)[1]
   # qmdname <- paste0(gsub(" ", "_", name), ".qmd")
   
   # if(!(file.exists(paste0("miembros/",qmdname)))){
@@ -47,7 +47,7 @@ create_profile_qmd <- function(form.table, row){
   txt <- paste0(
     "---", "\n",
     "title: ", name,  "\n",
-    "sortby: ", ord,  "\n",
+    # "sortby: ", ord,  "\n",
     "subtitle: ", email,  "\n",
     "image: ", image, "\n",
     "toc: false",  "\n",
