@@ -2,12 +2,11 @@
 title: "Miembros"
 ---
 
-Miembros del [grupo de Ecoinformática](http://www.aeet.org/es/gruposdetrabajo/ecoinformatica.html) de la [Asociación Española de Ecología Terrestre (AEET)](https://www.aeet.org/es/). 
+Miembros del [grupo de Ecoinformática](http://www.aeet.org/es/gruposdetrabajo/ecoinformatica.html) de la [Asociación Española de Ecología Terrestre (AEET)](https://www.aeet.org/es/).
 
-Para darte de alta rellena tus datos [aquí](https://forms.gle/bkCfSjERcDHsrLhx8). Si quieres actualizar o corregir un error en los datos por favor escribe a ecoinf.aeet@gmail.com.
+Para darte de alta rellena tus datos [aquí](https://forms.gle/bkCfSjERcDHsrLhx8). Si quieres actualizar o corregir un error en los datos por favor escribe a ecoinf.aeet\@gmail.com.
 
 <br>
-
 
 ```{r}
 #| label = "setup",
@@ -15,9 +14,7 @@ Para darte de alta rellena tus datos [aquí](https://forms.gle/bkCfSjERcDHsrLhx8
 knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE)
 ```
 
-
-
-``` {r echo = F , message = FALSE, warning = F}
+```{r echo = F , message = FALSE, warning = F}
 # library(dplyr)
 # library(sf)
 # library(htmltools)
@@ -59,8 +56,8 @@ member.table.coords$weblink <- paste0('<a href="',
 
 custom_icon <- leaflet::makeIcon(
   iconUrl = "images/location_custom.png",
-  iconWidth = 25, iconHeight = 30,
-  iconAnchorX = 12, iconAnchorY = 30
+  iconWidth = 20, iconHeight = 25,
+  iconAnchorX = 25, iconAnchorY = 25
 )
 
 
@@ -75,10 +72,8 @@ leaflet(member.table.coords) |>
   
   
 ```
-<br>
-<br>
 
-
+<br> <br>
 
 ```{r miembros, include=F, echo = F}
 
@@ -106,11 +101,10 @@ listing:
     grid-columns: 6
     fields: [image, title]
     grid-item-align: center
-    
 ---
 
-:::{#map}
+::: {#map}
 :::
 
-:::{#equipo}
+::: {#equipo}
 :::
