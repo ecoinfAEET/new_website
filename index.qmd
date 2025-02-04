@@ -1,5 +1,5 @@
 ---
-title: "Ecoinformática - AEET"
+title: ""
 ---
 
 <br>
@@ -13,7 +13,7 @@ knitr::include_graphics("images/ecoinf_10.jpg")
 
 <br>
 
-La ecología actual tiene casi siempre un componente importante de computación. Desde un sencillo análisis estadístico de datos hasta la realización de simulaciones estocásticas complejas, casi todos los ecólogos necesitan interaccionar en mayor o menor medida con una computadora. Sin embargo, la formación de los ecólogos en aspectos tales como el manejo de bases de datos, análisis de datos, modelización, programación, etc. ha sido tradicionalmente muy deficiente. Esto no sólo acarrea retrasos y problemas en la ejecución de los proyectos de investigación, sino que también limita el potencial y alcance de los mismos.
+La ecología tiene en muchas ocasiones un componente importante de computación. Desde un sencillo análisis estadístico de datos hasta la realización de simulaciones estocásticas complejas, casi todos los ecólogos necesitan interaccionar en mayor o menor medida con una computadora. Sin embargo, la formación de los ecólogos en aspectos tales como manejo de bases de datos, análisis de datos, modelización, programación, etc. ha sido tradicionalmente muy deficiente. Esto no sólo acarrea retrasos y problemas en la ejecución de los proyectos de investigación, sino que también limita el potencial y alcance de los mismos.
 
 El **grupo de trabajo de Ecoinformática** de la [Asociación Española de Ecología Terrestre (AEET)](https://www.aeet.org/es/) pretende fomentar el intercambio de experiencias y conocimientos sobre cualquier aspecto relacionado con la ecoinformática, además de contribuir a la formación de los nuevos ecólogos en buenas prácticas y técnicas de computación que les permitan desarrollar al máximo sus proyectos de investigación.
 
@@ -21,7 +21,7 @@ El **grupo de trabajo de Ecoinformática** de la [Asociación Española de Ecolo
 
 **Ámbito**
 
-Global (sin limitación geográfica). Tampoco existe limitación temática: se incluye cualquier área de la ecología (ecología teórica, análisis de datos, modelización, etc) que implique un aspecto computacional.
+Global (sin limitación geográfica). Tampoco existe limitación temática: se incluye cualquier área de la ecología que implique un aspecto computacional.
 
 <br>
 
@@ -43,11 +43,11 @@ Global (sin limitación geográfica). Tampoco existe limitación temática: se i
 
 -   Organización de cursos y talleres.
 
--   Publicación de [notas ecoinformáticas](notas-ecoinformaticas.html) en la revista *Ecosistemas*.
+-   Publicación de [notas ecoinformáticas](notas-ecoinformaticas.html) en la [revista *Ecosistemas*](https://www.revistaecosistemas.net/index.php/ecosistemas).
 
 -   Organización de [seminarios mensuales](seminarios.html) sobre diversos temas relacionados con la ecoinformática.
 
--   Intercambio de experiencias y conocimientos a través de [Slack](https://ecoinformatica-aeet.slack.com), la [lista de correo](https://groups.google.com/forum/#!forum/ecoinformatica_aeet), [twitter](https://twitter.com/ecoinf_aeet), etc.
+-   Intercambio de experiencias y conocimientos a través de [Slack](https://ecoinformatica-aeet.slack.com), la [lista de correo](https://groups.google.com/forum/#!forum/ecoinformatica_aeet), [Bluesky](https://bsky.app/profile/ecoinf-aeet.bsky.social), etc.
 
 <br>
 
@@ -57,7 +57,7 @@ Global (sin limitación geográfica). Tampoco existe limitación temática: se i
 
 -   [Elena Quintero](https://twitter.com/elequinter)
 
--   [Verónica Cruz Alonso](https://twitter.com/veruitter)
+-   [Verónica Cruz Alonso](https://scholar.google.es/citations?user=mdktyS4AAAAJ&hl=es)
 
 <br>
 
@@ -65,11 +65,11 @@ Global (sin limitación geográfica). Tampoco existe limitación temática: se i
 
 La participación activa es un pilar fundamental dentro de este grupo de trabajo. Para ello hemos puesto a disposición diferentes canales de comunicación:
 
--   La principal vía de comunicación entre nosotros es [Slack](https://ecoinformatica-aeet.slack.com). Ahí compartimos recursos, preguntamos dudas, organizamos actividades, etc. Aquí el enlace para unirse: https://join.slack.com/t/ecoinformatica-aeet/shared_invite/zt-11i2zvqwl-JJsoiJAf64ee5nzjCip~LA
+-   La principal vía de comunicación entre nosotros es [Slack](https://ecoinformatica-aeet.slack.com). Ahí compartimos recursos, preguntamos dudas, organizamos actividades, etc. Aquí el enlace para unirse: https://join.slack.com/t/ecoinformatica-aeet/shared_invite/zt-11i2zvqwl-JJsoiJAf64ee5nzjCip\~LA
 
 -   Date de alta en nuestro [directorio](miembros.html).
 
--   Twitter: nuestro perfil en twitter es [ecoinf_aeet](https://twitter.com/ecoinf_aeet)
+-   Bluesky: nuestro perfil en Bluesky es [ecoinf-aeet.bsky.social](https://bsky.app/profile/ecoinf-aeet.bsky.social)
 
 -   Correo electrónico: también puedes contactar con nosotros a través del correo electrónico: [ecoinf.aeet\@gmail.com](mailto:ecoinf.aeet@gmail.com){.email}
 
