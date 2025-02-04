@@ -11,11 +11,11 @@ format:
 
 ## Qué son
 
-Las Notas Ecoinformáticas son artículos breves sobre temas de ecoinformática en sentido amplio (estadística, programación, computación, reproducibilidad, ciencia de datos) que se publican en la revista [*Ecosistemas*](http://www.revistaecosistemas.net). Idealmente las Notas Ecoinformáticas deben dar una visión general para ecólogos no especialistas en ecoinformática. Más que un tratado exhaustivo, se recomienda el uso de ejemplos (es decir, mostrando código) y referencias a la literatura o tutoriales especializados para quien quiera saber más.
+Las Notas Ecoinformáticas son artículos breves sobre temas de ecoinformática en sentido amplio (estadística, programación, computación, reproducibilidad, ciencia de datos, etc.) que se publican en la revista [*Ecosistemas*](http://www.revistaecosistemas.net). Idealmente las Notas Ecoinformáticas deben dar una visión general para ecólogos no especialistas en ecoinformática más que ser un tratado exhaustivo. Se recomienda que incluyan ejemplos (es decir, mostrando código) y referencias a la literatura o tutoriales especializados para quien quiera saber más.
 
-Las Notas Ecoinformáticas deben tener una longitud máxima de 1500 palabras, y pueden incluir figuras y/o tablas (para contribuciones más largas pueden considerarse otros [tipos de artículo permitidos en la revista](http://www.revistaecosistemas.net/index.php/ecosistemas/about/submissions#authorGuidelines)).
+Las Notas Ecoinformáticas deben tener una longitud máxima de 1500 palabras, y pueden incluir figuras y/o tablas (para contribuciones más largas pueden considerarse otros [tipos de artículo permitidos en la revista *Ecosistemas*](http://www.revistaecosistemas.net/index.php/ecosistemas/about/submissions#authorGuidelines)).
 
-La sección de Notas Ecoinformáticas está coordinada por [Verónica Cruz Alonso](https://x.com/Veruitter) y [Julen Astigarraga](https://bsky.app/profile/julenastigarraga.bsky.social), miembros del grupo de trabajo de Ecoinformática de la [AEET](http://www.aeet.org).
+La sección de Notas Ecoinformáticas está coordinada por [Verónica Cruz Alonso](https://scholar.google.es/citations?user=mdktyS4AAAAJ&hl=es) y [Julen Astigarraga](https://bsky.app/profile/julenastigarraga.bsky.social), miembros del grupo de trabajo de Ecoinformática de la [AEET](http://www.aeet.org).
 
 <br>
 
@@ -33,11 +33,11 @@ Deben seguirse las [normas para envíos](http://www.revistaecosistemas.net/index
 
 5)  Los editores moderarán el proceso y aceptarán la nota una vez se haya completado la discusión. Si finalizado el proceso de revisión, la nota aún no se considerase apta para su publicación, podría ser rechazada.
 
-6)  Finalizada la revisión abierta en GitHub, los autores enviarán la nota a <https://www.revistaecosistemas.net> para su maquetación, incluyendo en agradecimientos el link al issue donde se incluirán los datos y códigos asociados a la nota, así como el enlace a la revisión abierta de la nota.
+6)  Finalizada la revisión abierta en GitHub, los autores enviarán la nota a <https://www.revistaecosistemas.net> para su maquetación, incluyendo en agradecimientos el link al issue donde se ha realizado la revisión abierta de la nota.
 
-Se seguirá en todo momento un código de conducta que sea inclusivo y respetuoso, siguiendo las directrices fijadas [aquí](https://ropensci.org/code-of-conduct/). Todos los revisores recibiran un reconocimiento por haber revisado la nota. Anualmente, los editores harán un release del repositorio de GitHub y publicarán una copia del repositorio en zenodo.
+Durante la revisión, seguirá en todo momento un código de conducta que sea inclusivo y respetuoso, siguiendo las directrices fijadas [aquí](https://ropensci.org/code-of-conduct/). Todos los revisores recibiran un reconocimiento por haber revisado la nota. Anualmente, los editores harán un release del repositorio de GitHub y publicarán una copia del repositorio en zenodo.
 
-En este [repositorio de GitHub](https://github.com/ecoinfAEET/Notas_Ecosistemas) hay un [issue abierto](https://github.com/ecoinfAEET/Notas_Ecosistemas/issues/1) para cada Nota Ecoinformática y otros para recoger propuestas de temas (y posibles responsables).
+En este [repositorio de GitHub](https://github.com/ecoinfAEET/Notas_Ecosistemas) hay un [issue abierto](https://github.com/ecoinfAEET/Notas_Ecosistemas/issues) para cada Nota Ecoinformática en revisión y otros para recoger propuestas de temas (y posibles responsables).
 
 Para la escritura de la nota, recomendamos la utilización de la [plantilla de Rmarkdown o de Quarto](https://github.com/ecoinfAEET/Notas_Ecosistemas/tree/master/template) incluida en la carpeta 'template' de este [repositorio de GitHub](https://github.com/ecoinfAEET/Notas_Ecosistemas). Dicha plantilla ya está configurada para generar un documento Word siguiendo todas las normas de estilo de la revista *Ecosistemas*. Alternativamente, también se puede escribir la nota en cualquier procesador de texto siguiendo las [normas para envíos](http://www.revistaecosistemas.net/index.php/ecosistemas/about/submissions#authorGuidelines) de la revista. En caso de incluir código de R, éste debe seguir las normas de estilo especificadas [aquí](http://adv-r.had.co.nz/Style.html).
 
