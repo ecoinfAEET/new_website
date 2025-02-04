@@ -5,6 +5,6 @@ for (i in 1:nrow(formdata)) {
   name <- formdata$`Nombre y apellidos`[i] |> 
     gsub(pattern = " ", replacement = "_") |> 
     iconv(from = 'UTF-8', to = 'ASCII//TRANSLIT')
-  if (file.exists(paste0("miembros/", name, ".qmd"))) {next}
+  # if (file.exists(paste0("miembros/", name, ".qmd"))) {next} #always re-render for updates
   create_profile_qmd(formdata, i)
 }
