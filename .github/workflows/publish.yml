@@ -28,7 +28,15 @@ jobs:
         with:
           packages: gsheet, fontawesome, leaflet, RJSONIO
           # dependencies: '"hard"'
+      
+      - name: Create profile for new members
+        run: Rscript -e 'source("R/create_members_profile.R")'
 
+      - name: Upload changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Upload members profiles
+          
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
         with:
