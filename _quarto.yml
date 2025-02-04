@@ -5,7 +5,7 @@ project:
 website:
   title: "Ecoinformática-AEET"
   twitter-card: true
-  site-url: https://ecoinfAEET.github.io/new_website/
+  site-url: https://ecoinfaeet.github.io/
   back-to-top-navigation: true
   navbar:
     left:
