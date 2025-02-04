@@ -45,7 +45,7 @@ member.table.coords <- merge(member.table, coords.table, all.x = TRUE) |>
   # filter(!is.na(lon)) |> 
   # st_as_sf(coords = c("lon", "lat")) |> 
 member.table.coords$weblink <- paste0('<a href="', 
-                         'https://ecoinfaeet.github.io/new_website/miembros/', 
+                         'https://ecoinfaeet.github.io/miembros/', 
                          iconv(gsub(" ", "_", member.table.coords$`Nombre y apellidos`), 
                                from = 'UTF-8', to = 'ASCII//TRANSLIT'),
                          ".html",
