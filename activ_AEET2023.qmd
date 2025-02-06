@@ -1,0 +1,21 @@
+---
+title: "Actividades del grupo de Ecoinformática en Congreso AEET 2023"
+editor: visual
+---
+
+<br>
+
+-   Taller sobre ‘**Programación funcional en R y cómo dejar de pensar en bucle**’.
+
+[Contenido del taller](https://github.com/DatSciR/intro_prog_fun/tree/main/AEET)
+
+Más información en la página [web del congreso](https://congreso2023.aeet.org/).
+
+<br>
+
+```{r}
+#| out.width = "100%",
+#| fig.height = 1,
+#| echo = FALSE
+knitr::include_graphics("images/ecoinf_10.jpg")
+```
