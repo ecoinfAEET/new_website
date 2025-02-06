@@ -49,11 +49,18 @@
     "text": "Resumen de investigación:\nMi investigación se centra en el estudio de interacciones bióticas, explorando cómo se construyen estas redes y sus efectos en el funcionamiento de los ecosistemas y la regeneración natural\n\n\nInterés profesional dentro del grupo:\nestadística, ciencia reproducible, R\n https://bsky.app/profile/elequintero.bsky.social\n https://github.com/elequintero\n https://elequintero.github.io\n\n  \n\n\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "jornadas.html",
-    "href": "jornadas.html",
-    "title": "I Jornadas de Ecoinformática de la AEET",
+    "objectID": "activ_AEET2023.html",
+    "href": "activ_AEET2023.html",
+    "title": "Actividades del grupo de Ecoinformática en Congreso AEET 2023",
     "section": "",
-    "text": "Las I Jornadas de Ecoinformática de la AEET se celebraron en Alcalá de Henares (Madrid), el 24 y 25 de octubre de 2024 en la Escuela de Arquitectura del campus histórico de la Universidad de Alcalá.\nEl propósito principal de las jornadas fue crear un espacio para que los miembros del grupo de Ecoinformática y otras personas interesadas en manejo y análisis de datos, modelización o programación, pudieran intercambiar investigaciones en ecología con un fuerte componente de análisis, avances metodológicos, herramientas informáticas e ideas innovadoras y así facilitar la colaboración interdisciplinar y el aprendizaje conjunto.\nPara más información visita la página web de las jornadas: https://ecoinf.quarto.pub/iecoinf/\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top"
+    "text": "Taller sobre ‘Programación funcional en R y cómo dejar de pensar en bucle’.\n\nContenido del taller\nMás información en la página web del congreso.\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "activ_reproducibilidad.html",
+    "href": "activ_reproducibilidad.html",
+    "title": "Reproducibilidad",
+    "section": "",
+    "text": "Lee nuestro artículo sobre ‘Ciencia reproducible: qué, por qué, cómo’\nMira el video: Non-reproducible workflows: a horror movie\nEnlaces a muchos recursos y tutoriales sobre ciencia reproducible\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "miembros.html",
@@ -70,11 +77,18 @@
     "text": "Dear colleagues,\nWe are pleased to announce the symposium\nEcoinformatics: data science brings new avenues for ecology\nat the XVI MEDECOS - XIII AEET meeting, 31 January – 4 February 2017, Seville, Spain.\nOpen access databases, open programming and advanced statistical methods are boosting the ability to solve complex long-standing questions in ecology. This symposium will bring together computational and theoretical ecologists, data scientists, and scientific programmers to showcase unique insights and conceptual advances made possible through ecoinformatics approaches.\nOur keynote speaker will be Dr. Roberto Salguero-Gómez (University of Sheffield, United Kingdom) who will talk about “low hanging fruits and future directions in comparative demography”.\nWe welcome contributions (both oral and posters) dealing with any aspect of ecoinformatics, including statistics, modelling, programming, and analysis of large ecological datasets. Please submit your abstract before 5th September 2016 through the meeting website.\nThe symposium is organised by the newly created AEET Ecoinformatics working group.\nFor more information please visit the conference website or write to ecoinf.aeet@gmail.com.\nLooking forward to your contributions and meeting you all in Sevilla next February!\nThe conveners,\nIgnasi Bartomeus, Sara Varela, Antonio J. Pérez-Luque y Francisco Rodríguez-Sánchez\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "activ_reproducibilidad.html",
-    "href": "activ_reproducibilidad.html",
-    "title": "Reproducibilidad",
+    "objectID": "activ_AEET2021.html",
+    "href": "activ_AEET2021.html",
+    "title": "Actividades del grupo de Ecoinformática en Congreso AEET 2021",
     "section": "",
-    "text": "Lee nuestro artículo sobre ‘Ciencia reproducible: qué, por qué, cómo’\nMira el video: Non-reproducible workflows: a horror movie\nEnlaces a muchos recursos y tutoriales sobre ciencia reproducible\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top"
+    "text": "Taller sobre ‘Introducción a Git y GitHub, dos herramientas para una ecología más colaborativa y reproducible’.\n\nContenido del taller\nMás información en la página web del congreso.\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "jornadas.html",
+    "href": "jornadas.html",
+    "title": "I Jornadas de Ecoinformática de la AEET",
+    "section": "",
+    "text": "Las I Jornadas de Ecoinformática de la AEET se celebraron en Alcalá de Henares (Madrid), el 24 y 25 de octubre de 2024 en la Escuela de Arquitectura del campus histórico de la Universidad de Alcalá.\nEl propósito principal de las jornadas fue crear un espacio para que los miembros del grupo de Ecoinformática y otras personas interesadas en manejo y análisis de datos, modelización o programación, pudieran intercambiar investigaciones en ecología con un fuerte componente de análisis, avances metodológicos, herramientas informáticas e ideas innovadoras y así facilitar la colaboración interdisciplinar y el aprendizaje conjunto.\nPara más información visita la página web de las jornadas: https://ecoinf.quarto.pub/iecoinf/\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "notas-ecoinformaticas.html#qué-son",
