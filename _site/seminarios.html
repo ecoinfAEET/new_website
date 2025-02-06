@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Seminarios – Ecoinformática-AEET</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+<meta name="twitter:title" content="Seminarios – Ecoinformática-AEET">
+<meta name="twitter:card" content="summary">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Ecoinformática-AEET</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Inicio</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./miembros.html"> 
+<span class="menu-text">Miembros</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./notas-ecoinformaticas.html"> 
+<span class="menu-text">Notas Ecoinformáticas</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./seminarios.html" aria-current="page"> 
+<span class="menu-text">Seminarios</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-actividades" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Actividades</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-actividades">    
+        <li>
+    <a class="dropdown-item" href="./activ_symposium_2017.html">
+ <span class="dropdown-text">Symposium 2017</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./activ_reproducibilidad.html">
+ <span class="dropdown-text">Reproducibilidad</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./activ_medecos2017.html">
+ <span class="dropdown-text">Actividades MEDECOS 2017</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./jornadas.html">
+ <span class="dropdown-text">I Jornadas de Ecoinformática</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Índice</h2>
+   
+  <ul>
+  <li><a href="#seminario-17.-bluecarbon-r-package-get-stocks-and-sequestration-rates-estimations-directly-from-raw-laboratory-data" id="toc-seminario-17.-bluecarbon-r-package-get-stocks-and-sequestration-rates-estimations-directly-from-raw-laboratory-data" class="nav-link active" data-scroll-target="#seminario-17.-bluecarbon-r-package-get-stocks-and-sequestration-rates-estimations-directly-from-raw-laboratory-data">Seminario 17. BlueCarbon R package: get stocks and sequestration rates estimations directly from raw laboratory data</a></li>
+  <li><a href="#seminario-16.-el-papel-de-la-ia-en-la-ecología-cómo-transformar-imágenes-en-datos" id="toc-seminario-16.-el-papel-de-la-ia-en-la-ecología-cómo-transformar-imágenes-en-datos" class="nav-link" data-scroll-target="#seminario-16.-el-papel-de-la-ia-en-la-ecología-cómo-transformar-imágenes-en-datos">Seminario 16. El papel de la IA en la ecología, cómo transformar imágenes en datos</a></li>
+  <li><a href="#seminario-15.-inferir-rango-de-distribución-a-partir-de-diversidad-genética" id="toc-seminario-15.-inferir-rango-de-distribución-a-partir-de-diversidad-genética" class="nav-link" data-scroll-target="#seminario-15.-inferir-rango-de-distribución-a-partir-de-diversidad-genética">Seminario 15. Inferir rango de distribución a partir de diversidad genética</a></li>
+  <li><a href="#seminario-14.-qué-información-puedo-obtener-de-los-datos-pnoa-lidar" id="toc-seminario-14.-qué-información-puedo-obtener-de-los-datos-pnoa-lidar" class="nav-link" data-scroll-target="#seminario-14.-qué-información-puedo-obtener-de-los-datos-pnoa-lidar">Seminario 14. ¿Qué información puedo obtener de los datos PNOA-LiDAR?</a></li>
+  <li><a href="#seminario-13.-labeler-genera-tus-certificados-y-etiquetas" id="toc-seminario-13.-labeler-genera-tus-certificados-y-etiquetas" class="nav-link" data-scroll-target="#seminario-13.-labeler-genera-tus-certificados-y-etiquetas">Seminario 13. labeleR: genera tus certificados y etiquetas</a></li>
+  <li><a href="#seminario-12.-regímenes-dinámicos-ecológicos" id="toc-seminario-12.-regímenes-dinámicos-ecológicos" class="nav-link" data-scroll-target="#seminario-12.-regímenes-dinámicos-ecológicos">Seminario 12. Regímenes dinámicos ecológicos</a></li>
+  <li><a href="#seminario-11.-introducción-al-uso-de-filogenias" id="toc-seminario-11.-introducción-al-uso-de-filogenias" class="nav-link" data-scroll-target="#seminario-11.-introducción-al-uso-de-filogenias">Seminario 11. Introducción al uso de filogenias</a></li>
+  <li><a href="#seminario-10.-introducción-a-zotero" id="toc-seminario-10.-introducción-a-zotero" class="nav-link" data-scroll-target="#seminario-10.-introducción-a-zotero">Seminario 10. Introducción a Zotero</a></li>
+  <li><a href="#seminario-9.-introducción-al-mundo-de-la-bioacústica" id="toc-seminario-9.-introducción-al-mundo-de-la-bioacústica" class="nav-link" data-scroll-target="#seminario-9.-introducción-al-mundo-de-la-bioacústica">Seminario 9. Introducción al mundo de la bioacústica</a></li>
+  <li><a href="#seminario-8.-introducción-al-análisis-espacial-de-patrones-de-puntos" id="toc-seminario-8.-introducción-al-análisis-espacial-de-patrones-de-puntos" class="nav-link" data-scroll-target="#seminario-8.-introducción-al-análisis-espacial-de-patrones-de-puntos">Seminario 8. Introducción al análisis espacial de patrones de puntos</a></li>
+  <li><a href="#seminario-7.-integración-de-datos-en-la-estima-de-la-distribución-y-abundancia-animal" id="toc-seminario-7.-integración-de-datos-en-la-estima-de-la-distribución-y-abundancia-animal" class="nav-link" data-scroll-target="#seminario-7.-integración-de-datos-en-la-estima-de-la-distribución-y-abundancia-animal">Seminario 7. Integración de datos en la estima de la distribución y abundancia animal</a></li>
+  <li><a href="#seminario-6.-introducción-a-python" id="toc-seminario-6.-introducción-a-python" class="nav-link" data-scroll-target="#seminario-6.-introducción-a-python">Seminario 6. Introducción a Python</a></li>
+  <li><a href="#seminario-5.-análisis-de-dinámicas-poblacionales-en-r" id="toc-seminario-5.-análisis-de-dinámicas-poblacionales-en-r" class="nav-link" data-scroll-target="#seminario-5.-análisis-de-dinámicas-poblacionales-en-r">Seminario 5. Análisis de dinámicas poblacionales en R</a></li>
+  <li><a href="#seminario-4.-generación-de-visores-de-datos-espaciales-con-r" id="toc-seminario-4.-generación-de-visores-de-datos-espaciales-con-r" class="nav-link" data-scroll-target="#seminario-4.-generación-de-visores-de-datos-espaciales-con-r">Seminario 4. Generación de visores de datos espaciales con R</a></li>
+  <li><a href="#seminario-3.-análisis-de-la-ciencia-ciudadana-mediante-modelos-de-ocupación" id="toc-seminario-3.-análisis-de-la-ciencia-ciudadana-mediante-modelos-de-ocupación" class="nav-link" data-scroll-target="#seminario-3.-análisis-de-la-ciencia-ciudadana-mediante-modelos-de-ocupación">Seminario 3. Análisis de la ciencia ciudadana mediante modelos de ocupación</a></li>
+  <li><a href="#seminario-2.-estadística-bayesiana" id="toc-seminario-2.-estadística-bayesiana" class="nav-link" data-scroll-target="#seminario-2.-estadística-bayesiana">Seminario 2. Estadística bayesiana</a></li>
+  <li><a href="#seminario-1.-búsqueda-descarga-y-limpieza-de-datos-desde-gbif" id="toc-seminario-1.-búsqueda-descarga-y-limpieza-de-datos-desde-gbif" class="nav-link" data-scroll-target="#seminario-1.-búsqueda-descarga-y-limpieza-de-datos-desde-gbif">Seminario 1. Búsqueda, descarga y limpieza de datos desde GBIF</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content column-page-left" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Seminarios</h1>
+</div>
+
+
+
+<div class="quarto-title-meta column-page-left">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><br></p>
+<section id="seminario-17.-bluecarbon-r-package-get-stocks-and-sequestration-rates-estimations-directly-from-raw-laboratory-data" class="level2">
+<h2 class="anchored" data-anchor-id="seminario-17.-bluecarbon-r-package-get-stocks-and-sequestration-rates-estimations-directly-from-raw-laboratory-data">Seminario 17. BlueCarbon R package: get stocks and sequestration rates estimations directly from raw laboratory data</h2>
+<ul>
+<li><p><a href="https://www.youtube.com/watch?v=XCrrR3_MSHc">BlueCarbon R package: get stocks and sequestration rates estimations directly from raw laboratory data</a></p>
+<ul>
+<li><p>Impartido por: Nerea Piñeiro Juncal</p></li>
+<li><p>Resumen: The goal of the BlueCarbon R package is to facilitate the estimation of organic carbon stocks and sequestration rates from soil/sediment cores from blue carbon ecosystems. It can also be used to estimate stocks for any soil/sediment data, and to estimate sequestration rates for any soil/sediment data from depositional environments. It contains seven main functions to estimate the compaction of cores, mathematically correct core compaction, estimate sample thickness, estimate organic carbon content from organic matter content, estimate organic carbon stocks and sequestration rates and visualize the error of stock extrapolation. In this webinar we will learn how each function works and how to use them to obtain stocks and sequestration rates estimations directly from raw laboratory data. This R package is openly available in GitHub: <a href="https://ecologyr.github.io/BlueCarbon/" class="uri">https://ecologyr.github.io/BlueCarbon/</a>.</p></li>
+<li><p>Fecha: 28 enero 2025</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="seminario-16.-el-papel-de-la-ia-en-la-ecología-cómo-transformar-imágenes-en-datos" class="level2">
+<h2 class="anchored" data-anchor-id="seminario-16.-el-papel-de-la-ia-en-la-ecología-cómo-transformar-imágenes-en-datos">Seminario 16. El papel de la IA en la ecología, cómo transformar imágenes en datos</h2>
+<ul>
+<li><p><a href="https://www.youtube.com/watch?v=txJfuPeodQw">El papel de la IA en la ecología, cómo transformar imágenes en datos: Opciones, desafíos y soluciones</a></p>
+<ul>
+<li><p>Impartido por: Alba Márquez-Rodríguez y Antón Álvarez</p></li>
+<li><p>Resumen: El seminario pretende explorar la creciente intersección entre la inteligencia artificial (IA) y la ecología, centrándose en cómo la IA puede transformar imágenes en datos para impulsar la investigación y la conservación de la naturaleza. El seminario aborda la definición de IA y su relevancia en el contexto ecológico, destacando casos prácticos que ilustran su aplicación en la recolección y análisis de datos ecológicos. El objetivo principal de la charla es familiarizar a las personas participantes con el potencial y las aplicaciones prácticas de la IA en el campo de la ecología. Se discutirán herramientas y técnicas específicas de IA que ya están disponibles y se exploran errores comunes que suelen cometerse desde la perspectiva de la ecología al utilizar estas tecnologías. Además, se enfatiza la importancia de una colaboración interdisciplinaria entre ecólogos y expertos en IA para abordar los desafíos ambientales de manera efectiva. En resumen, la charla busca inspirar a los participantes a considerar cómo la IA puede mejorar y ampliar su trabajo en la conservación y comprensión de los ecosistemas naturales.</p></li>
+<li><p>Fecha: 29 mayo 2024</p></li>
+<li><p>Links a webs de IA surgidas durante las preguntas:</p>
+<ul>
+<li><a href="https://github.com/agentmorris/Awesome-Remote-Sensing-Foundation-Models" class="uri">https://github.com/agentmorris/Awesome-Remote-Sensing-Foundation-Models</a></li>
+<li><a href="https://github.com/agentmorris/camera-trap-ml-survey" class="uri">https://github.com/agentmorris/camera-trap-ml-survey</a></li>
+<li><a href="https://addaxdatascience.com/ecoassist/" class="uri">https://addaxdatascience.com/ecoassist/</a></li>
+<li><a href="https://huggingface.co/docs/transformers/model_doc/grounding-dino" class="uri">https://huggingface.co/docs/transformers/model_doc/grounding-dino</a></li>
+<li><a href="https://aiforconservation.slack.com/join/shared_invite/zt-2jxl41cwx-TBbsOOcvTEvh0JKdu5JaJg#/shared-invite/email" class="uri">https://aiforconservation.slack.com/join/shared_invite/zt-2jxl41cwx-TBbsOOcvTEvh0JKdu5JaJg#/shared-invite/email</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="seminario-15.-inferir-rango-de-distribución-a-partir-de-diversidad-genética" class="level2">
+<h2 class="anchored" data-anchor-id="seminario-15.-inferir-rango-de-distribución-a-partir-de-diversidad-genética">Seminario 15. Inferir rango de distribución a partir de diversidad genética</h2>
+<ul>
+<li><p><a href="https://www.youtube.com/watch?v=KLN2wMnivVA">Inferencias de rango a partir de la distribución geográfica de la diversidad genética de las especies</a></p>
+<ul>
+<li><p>Impartido por: Alejandro Llanos-Garrido, Universidad Complutense de Madrid</p></li>
+<li><p>Resumen: Durante la expansión histórica del rango de distribución de una especie, los individuos que van colonizando nuevos ambientes se enfrentan a diferentes retos ecológicos. Lo capaces que son esos individuos de tener éxito en la expansión debe depender inequívocamente de lo adaptados que estén a los nuevos ambientes. Las herramientas de las que dispone un individuo para sobreponerse a estos retos se traducen en diversidad genética adaptativa. Por tanto, los rangos de distribución de una especie deben estar estrechamente relacionados con la cantidad total de variación genética adaptativa de esa especie. En este seminario, a partir de genomas de unas pocas poblaciones que ocupen un gradiente climático representativo del rango de distribución de una especie, identificaremos la porción de diversidad genética sujeta a selección natural (i.e., responsable de adaptaciones), y lo relacionaremos con la diversidad ambiental que ocupa. Extrapolando el modelo que surja de establecer esa relación, es posible saber qué ambientes puede ocupar una cantidad de diversidad genética adaptativa concreta, inferir el rango de distribución de la especie a partir de esta información y conocer los determinantes intrínsecos a la especie que restringen o favorecen la expansión o contracción de su rango.</p></li>
+<li><p>Fecha: 9 Abril 2024</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="seminario-14.-qué-información-puedo-obtener-de-los-datos-pnoa-lidar" class="level2">
+<h2 class="anchored" data-anchor-id="seminario-14.-qué-información-puedo-obtener-de-los-datos-pnoa-lidar">Seminario 14. ¿Qué información puedo obtener de los datos PNOA-LiDAR?</h2>
+<ul>
+<li><p><a href="https://www.youtube.com/watch?v=vzjqLjKOPPM">¿Qué información puedo obtener de los datos abiertos PNOA-LiDAR para caracterizar mi zona de estudio?</a></p>
+<ul>
+<li><p>Impartido por: Marina Rodes-Blanco, Universidad de Alcalá</p></li>
+<li><p>Resumen: LiDAR es una técnica de teledetección activa que utiliza la luz de un láser y registra coordenadas tridimensionales de la superficie de la tierra. El proyecto PNOA-LiDAR captura, a nivel nacional, esta información mediante sensores aerotransportados y pone los datos a disposición en el portal de descargas del IGN de manera totalmente gratuita. El objetivo de este seminario es explicar las características generales de este tipo de datos, los formatos en los que se encuentra y la utilización del paquete lidR para extraer información del terreno y de la masa arbórea con la finalidad de caracterizar un área de estudio determinada.</p></li>
+<li><p>Fecha: 13 Marzo 2024</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="seminario-13.-labeler-genera-tus-certificados-y-etiquetas" class="level2">
+<h2 class="anchored" data-anchor-id="seminario-13.-labeler-genera-tus-certificados-y-etiquetas">Seminario 13. labeleR: genera tus certificados y etiquetas</h2>
+<ul>
+<li><p><a href="https://www.youtube.com/watch?v=CPimYLdDI5o">Taller de labeleR: cómo generar etiquetas científicas, certificados para eventos y mucho más en R</a></p>
+<ul>
+<li><p>Impartido por: Julia G. de Aledo, Universidad Autónoma de Madrid</p></li>
+<li><p>Resumen: El paquete de R labeleR que tiene como objetivo generar etiquetas de herbario, etiquetas para distintos tipos de colecciones, certificados de asistencia y participación a eventos, acreditaciones, etc. Esta herramienta es altamente accesible y permite la generación de etiquetas y otros documentos de manera automatizada a partir de extensas bases de datos, simplificando significativamente procesos repetitivos y de larga duración. Las funciones incorporadas permiten seleccionar la base de datos de origen, introducir QRs, añadir logos y personalizar campos de contenido según cada necesidad. En esta charla explicaremos el funcionamiento del paquete y haremos un taller sobre cómo utilizar sus funciones, contestando las dudas que surjan. El paquete está disponible para su uso de manera abierta en GitHub, y cuenta con un tutorial de uso.</p></li>
+<li><p>Tutorial de labeleR: <a href="https://ecologyr.github.io/labeleR/" class="uri">https://ecologyr.github.io/labeleR/</a></p></li>
+<li><p>Repositorio para empezar: <a href="https://github.com/juliagdealedo/labeleR_workshop" class="uri">https://github.com/juliagdealedo/labeleR_workshop</a></p></li>
+<li><p>Fecha: 25 Enero 2024</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="seminario-12.-regímenes-dinámicos-ecológicos" class="level2">
+<h2 class="anchored" data-anchor-id="seminario-12.-regímenes-dinámicos-ecológicos">Seminario 12. Regímenes dinámicos ecológicos</h2>
+<ul>
+<li><p><a href="https://www.youtube.com/watch?v=Fy5YNSe-btA">Regímenes dinámicos ecológicos: identificación, caracterización y comparación</a></p>
+<ul>
+<li><p>Impartido por: Martina Sánchez Pinillos, Université de Montpellier / Université du Québec à Montréal (UQAM)</p></li>
+<li><p>Resumen: Entender cómo cambian los ecosistemas a lo largo del tiempo es una cuestión que ha despertado gran interés entre ecólogos y naturalistas de todas las épocas. Sin embargo, caracterizar cuantitativamente las dinámicas ecológicas sigue siendo un reto debido a la gran complejidad de los sistemas ecológicos y a la falta de datos que permitan evaluar el estado de los sistemas durante largos periodos de tiempo. En este seminario, se introducirá un conjunto de análisis y métricas implementadas en R para identificar, caracterizar y comparar regímenes dinámicos a partir de grandes bases de datos.</p></li>
+<li><p>Link a repo de GitHub: <a href="https://github.com/MSPinillos/ecoregime_tutorial" class="uri">https://github.com/MSPinillos/ecoregime_tutorial</a></p></li>
+<li><p>Link a zenodo: <a href="https://zenodo.org/record/8388777" class="uri">https://zenodo.org/record/8388777</a></p></li>
+<li><p>Fecha: 28 Septiembre 2023</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="seminario-11.-introducción-al-uso-de-filogenias" class="level2">
+<h2 class="anchored" data-anchor-id="seminario-11.-introducción-al-uso-de-filogenias">Seminario 11. Introducción al uso de filogenias</h2>
+<ul>
+<li><p><a href="https://www.youtube.com/watch?v=C9Gyah5XES0">Introducción al uso de filogenias en Ecología. El paquete randtip como método de abordar la incompletitud filogenética</a></p>
+<ul>
+<li><p>Impartido por: Ignacio Ramos, Universidad Autónoma de Madrid</p></li>
+<li><p>Resumen: La inclusión de filogenias es un aspecto clave en Ecología, puesto que trata la historia evolutiva de distintos taxones como un gradiente, y no como unidades independientes. En la primera parte de este seminario vamos a ver la importancia de incluir información filogenética en análisis ecológicos, qué oportunidades presenta, y problemáticas que conlleva. En una segunda parte se presentará una metodología para expandir filogenias incompletas utilizando información no molecular, y su aplicación a través del paquete de R <em>randtip</em>.</p></li>
+<li><p>Link a repo de GitHub: <a href="https://github.com/iramosgutierrez/randtip" class="uri">https://github.com/iramosgutierrez/randtip</a></p></li>
+<li><p>Link a manuscrito: <a href="https://www.biorxiv.org/content/10.1101/2022.01.04.474924v1" class="uri">https://www.biorxiv.org/content/10.1101/2022.01.04.474924v1</a></p></li>
+<li><p>Link a tutorial: <a href="https://www.biorxiv.org/content/biorxiv/early/2022/01/04/2022.01.04.474924/DC2/embed/media-2.pdf?download=false" class="uri">https://www.biorxiv.org/content/biorxiv/early/2022/01/04/2022.01.04.474924/DC2/embed/media-2.pdf?download=false</a></p></li>
+<li><p>Fecha: 29 Mayo 2023</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="seminario-10.-introducción-a-zotero" class="level2">
+<h2 class="anchored" data-anchor-id="seminario-10.-introducción-a-zotero">Seminario 10. Introducción a Zotero</h2>
+<ul>
+<li><p><a href="https://www.youtube.com/watch?v=nkEM6ny_E9U">Introducción a Zotero: cómo organizar nuestras referencias de forma accesible y cómo citar fácilmente en R con Quarto/RMarkdown</a></p>
+<ul>
+<li><p>Impartido por: Darío San Segundo Molina, Universidad de Alcalá, Madrid</p></li>
+<li><p>Resumen: Organizar nuestra bibliografía de una forma eficiente, fácilmente accesible e integrarla en flujos de trabajo reproducibles (p.&nbsp;ej. RMarkdown o Quarto) supone muchas ventajas a la hora de integrar conocimiento científico, redactar manuscritos/proyectos y compartir referencias. Zotero es una herramienta de código abierto que facilita estas tareas. En este seminario, especialmente orientado para investigadores/as de ecología en etapas tempranas, veremos brevemente las funcionalidades principales de su interfaz, sus ventajas frente a otros gestores y el funcionamiento general de citas en procesadores de texto, deteniéndonos en cómo utilizarlo junto con Quarto/RMarkdown a través del visual editor mode para facilitar un flujo de trabajo reproducible. Por último, veremos algunos recursos adicionales como el acceso a cualquier artículo desde la interfaz vía SciHub , los Zotero-Groups y la sincronización cuasi-ilimitada de archivos entre dispositivos mediante nubes de almacenamiento.</p></li>
+<li><p>Link a repo de GitHub: <a href="https://github.com/dario-ssm/zote_r_o" class="uri">https://github.com/dario-ssm/zote_r_o</a></p></li>
+<li><p>Link a diapositivas: <a href="https://dario-ssm.github.io/zote_r_o/#/title-slide" class="uri">https://dario-ssm.github.io/zote_r_o/#/title-slide</a></p></li>
+<li><p>Fecha: 20 Febrero 2023</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="seminario-9.-introducción-al-mundo-de-la-bioacústica" class="level2">
+<h2 class="anchored" data-anchor-id="seminario-9.-introducción-al-mundo-de-la-bioacústica">Seminario 9. Introducción al mundo de la bioacústica</h2>
+<ul>
+<li><p><a href="https://www.youtube.com/watch?v=ZwKuy6E-GhE">Introducción al mundo de la bioacústica y aplicaciones metodológicas. ¡Escucha qué dicen tus datos!</a></p>
+<ul>
+<li><p>Impartido por: Elena Tena, Estación Biológica de Doñana - CSIC, Sevilla</p></li>
+<li><p>Resumen: Muchas especies se desplazan e interaccionan con el medio a partir del sonido. La bioacústica es una metodología no invasiva que nos permite detectar diferentes animales a través de su canto. Durante este seminario, veremos los principios básicos de la bioacústica y sus aplicaciones metodológicas. Aprenderemos a cómo registrar datos acústicos con diferentes detectores de sonido así como a gestionar y analizar dichos datos en base a diferentes parámetros acústicos. Concretamente, analizaremos algunos ejemplos de grabaciones de especies variadas con distintos software de sonido.</p></li>
+<li><p>Fecha: 29 Noviembre 2022</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="seminario-8.-introducción-al-análisis-espacial-de-patrones-de-puntos" class="level2">
+<h2 class="anchored" data-anchor-id="seminario-8.-introducción-al-análisis-espacial-de-patrones-de-puntos">Seminario 8. Introducción al análisis espacial de patrones de puntos</h2>
+<ul>
+<li><p><a href="https://www.youtube.com/watch?v=1ye4v3ugAfc">Introducción al análisis espacial de patrones de puntos. ¿Qué hago con mis coordenadas espaciales?</a></p>
+<ul>
+<li><p>Impartido por: Antonio Perea Martos, Estación Experimental del Zaidín - CSIC, Granada</p></li>
+<li><p>Resumen: Hubbell et al.&nbsp;en el año 2001 postularon que “Cualquier mecanismo de coexistencia que esté operando en un bosque deja una huella espacial que puede ser detectada haciendo mapas individuales de las localizaciones”. Estas huellas espaciales vienen determinadas por la posición (X e Y) de los sujetos de estudios, y aportan pistas sobre los mecanismos que podrían estar operando en el ensamblaje de comunidades. Para analizar este tipo de huellas se requiere del uso del “point pattern analysis”, una herramienta muy versátil y aplicable prácticamente a cualquier campo de la ecología que trabaje con localizaciones (puntos). Por tanto, el uso de este tipo de herramienta aporta una perspectiva añadida a los análisis estadísticos convencionales, evaluando el efecto de la distancia y la densidad en los procesos de interés. En este escenario veremos algunos ejemplos sobre las posibles aplicaciones de esta metodología, a la vez que se atenderán dudas según vayan surgiendo.</p></li>
+<li><p>Fecha: 24 Octubre 2022</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="seminario-7.-integración-de-datos-en-la-estima-de-la-distribución-y-abundancia-animal" class="level2">
+<h2 class="anchored" data-anchor-id="seminario-7.-integración-de-datos-en-la-estima-de-la-distribución-y-abundancia-animal">Seminario 7. Integración de datos en la estima de la distribución y abundancia animal</h2>
+<ul>
+<li><p><a href="https://www.youtube.com/watch?v=ybD4GM_OB3M">Integración de datos en la estima de la distribución y abundancia animal</a></p>
+<ul>
+<li><p>Impartido por: Javier Fernández-López, CEFE - UCM (Montpellier, Francia)</p></li>
+<li><p>Resumen: Cada vez más a menudo disponemos de diferentes fuentes de datos con información complementaria acerca de la abundancia o distribución de las poblaciones animales: datos de fototrampeo, conteos directos, registros de presencia oportunistas… En este seminario veremos como la integración de datos en un marco de modelización jerárquica permite combinar estas distintas fuentes en único modelo para obtener estimas de abundancias más precisas.</p></li>
+<li><p>Link a repo de GitHub: <a href="https://github.com/jabiologo/aeetSeminario" class="uri">https://github.com/jabiologo/aeetSeminario</a></p></li>
+<li><p>Fecha: 29 Septiembre 2022</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="seminario-6.-introducción-a-python" class="level2">
+<h2 class="anchored" data-anchor-id="seminario-6.-introducción-a-python">Seminario 6. Introducción a Python</h2>
+<ul>
+<li><p><a href="https://www.youtube.com/watch?v=0_73g05Wjgc">Introducción al análisis de datos con Python</a></p>
+<ul>
+<li><p>Impartido por: Virginia Domínguez-García, Estación Biológica de Doñana - CSIC, Sevilla</p></li>
+<li><p>Resumen: La programación se está volviendo más y más importante para el análisis de datos en todas las disciplinas. Aunque en ecología el lenguaje de programación más utilizado es R, en ocasiones conocer otros lenguajes puede facilitarte la vida pues diferentes librerías están más desarrolladas en uno u otro lenguaje (por ejemplo el machine learning en Python). Este taller es una introducción al uso de Python para el análisis de datos, en el que se cubrirán: la lectura (y escritura) de datos desde ficheros, la limpieza y re-estructuración de dichos datos, su análisis usando estadísticas simples, y finalmente la representación de los resultados. Para poder ir realizando los ejercicios propuestos se recomienda tener instalado Python (preferiblemente con Anaconda <a href="https://www.anaconda.com/products/distribution" class="uri">https://www.anaconda.com/products/distribution</a>) antes de iniciar el taller, pero si las personas asistentes encuentran problemas con la instalación cubriremos esto al inicio del taller también.</p></li>
+<li><p>Link a repo de GitHub: <a href="https://github.com/domgarvir/taller_python_data" class="uri">https://github.com/domgarvir/taller_python_data</a></p></li>
+<li><p>Fecha: 5 Julio 2022</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="seminario-5.-análisis-de-dinámicas-poblacionales-en-r" class="level2">
+<h2 class="anchored" data-anchor-id="seminario-5.-análisis-de-dinámicas-poblacionales-en-r">Seminario 5. Análisis de dinámicas poblacionales en R</h2>
+<ul>
+<li><p><a href="https://www.youtube.com/watch?v=oAC7DVWAMRc">Análisis de dinámicas poblacionales en R</a></p>
+<ul>
+<li><p>Impartido por: David García-Callejas, Landcare Research New Zealand, University of Canterbury</p></li>
+<li><p>Resumen: Las poblaciones de diferentes especies varían en respuesta a toda una serie de factores, y la ecología matemática ha ido desarrollando, desde hace más de un siglo, las herramientas para analizar estas dinámicas. En este seminario haremos un repaso de los fundamentos ecológicos de algunas de estas herramientas, desde modelos de crecimiento exponencial a dinámicas Lotka-Volterra, y veremos cómo implementarlas en R. Hablaremos de dinámicas de especies individuales y de especies con diferentes tipos de interacciones, repasando funciones para evaluar su estabilidad o para representarlas gráficamente.</p></li>
+<li><p>Link a repo de GitHub: <a href="https://github.com/garciacallejas/LV_dynamics" class="uri">https://github.com/garciacallejas/LV_dynamics</a></p></li>
+<li><p>Fecha: 6 Junio 2022</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="seminario-4.-generación-de-visores-de-datos-espaciales-con-r" class="level2">
+<h2 class="anchored" data-anchor-id="seminario-4.-generación-de-visores-de-datos-espaciales-con-r">Seminario 4. Generación de visores de datos espaciales con R</h2>
+<ul>
+<li><p><a href="https://www.youtube.com/watch?v=niPkyIrEv-k">Generación de visores de datos espaciales con R</a></p>
+<ul>
+<li><p>Impartido por: Antonio J. Pérez-Luque, Estación Experimental del Zaidín CSIC, Granada</p></li>
+<li><p>Resumen: ¿Necesitas mostrar información espacial sobre alguna de tus investigaciones? ¿Quieres compartir con tus colaboradores las zonas de tu muestreo de una forma sencilla? En este seminario introduciremos algunas herramientas para la creación de visores espaciales sencillos y prácticos que permitan mostrar tu información espacial combinándola con otras capas de información. Para ello, utilizaremos diferentes paquetes de R, y combinándolos con leaflet (una librería JavaScript), GitHub y servicios WMS, generaremos visores espaciales de una forma sencilla.</p></li>
+<li><p>Link a presentación: <a href="https://ajpelu.github.io/visores_geograficos_r/slides.html" class="uri">https://ajpelu.github.io/visores_geograficos_r/slides.html</a></p></li>
+<li><p>Link a repo de GitHub: <a href="https://github.com/ajpelu/visores_geograficos_r" class="uri">https://github.com/ajpelu/visores_geograficos_r</a></p></li>
+<li><p>Mapa de ejemplo: <a href="https://ajpelu.github.io/visores_geograficos_r_ejemplo/" class="uri">https://ajpelu.github.io/visores_geograficos_r_ejemplo/</a></p></li>
+<li><p>Fecha: 5 Mayo 2022</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="seminario-3.-análisis-de-la-ciencia-ciudadana-mediante-modelos-de-ocupación" class="level2">
+<h2 class="anchored" data-anchor-id="seminario-3.-análisis-de-la-ciencia-ciudadana-mediante-modelos-de-ocupación">Seminario 3. Análisis de la ciencia ciudadana mediante modelos de ocupación</h2>
+<ul>
+<li><p><a href="https://www.youtube.com/watch?v=OKEtldANpHA">Análisis de la ciencia ciudadana mediante modelos de ocupación</a></p>
+<ul>
+<li><p>Impartido por: Guillermo Fandos Guzmán, Universidad Complutense de Madrid</p></li>
+<li><p>Resumen: Durante este seminario vamos a ver los pasos iniciales básicos para aplicar los modelos de ocupación a los datos de ciencia ciudadana. Los modelos de ocupación nos permiten modelar conjuntamente el proceso ecológico de aparición de especies y el proceso de observación de la detección de especies, pero a su vez nos permite sacar estimas como procesos separados. Este marco analítico nos permite tener en cuenta la variación de la probabilidad de detección al estimar la presencia de las especies.</p></li>
+<li><p>Link a datos y PDF: <a href="https://drive.google.com/drive/folders/1BX1js28MS-RSMFvTHoKJJ6iDY9wGNoAw" class="uri">https://drive.google.com/drive/folders/1BX1js28MS-RSMFvTHoKJJ6iDY9wGNoAw</a></p></li>
+<li><p>Fecha: 30 Marzo 2022</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="seminario-2.-estadística-bayesiana" class="level2">
+<h2 class="anchored" data-anchor-id="seminario-2.-estadística-bayesiana">Seminario 2. Estadística bayesiana</h2>
+<ul>
+<li><p><a href="https://www.youtube.com/watch?v=usB7reMJxLU">Estadística bayesiana: principios, teorema de bayes y su aplicación</a></p>
+<ul>
+<li><p>Impartido por: Paloma Ruiz-Benito e Ignacio Morales-Castilla, Universidad de Alcalá (UAH), Madrid - grupo de EcoBayesUAH</p></li>
+<li><p>Resumen: Repaso de los beneficios en el uso de una aproximación de la estadística bayesiana, explicación general del teorema de Bayes, y uso de ejemplos conceptuales y prácticos.</p></li>
+<li><p>Fecha: 28 Febrero 2022</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="seminario-1.-búsqueda-descarga-y-limpieza-de-datos-desde-gbif" class="level2">
+<h2 class="anchored" data-anchor-id="seminario-1.-búsqueda-descarga-y-limpieza-de-datos-desde-gbif">Seminario 1. Búsqueda, descarga y limpieza de datos desde GBIF</h2>
+<ul>
+<li><p><a href="https://www.youtube.com/watch?v=VSUEi50tkAI">Búsqueda, descarga y limpieza de datos de biodiversidad desde GBIF. Una odisea ecoinformática</a></p>
+<ul>
+<li><p>Impartido por: Carlos Lara Romero, Universidad Rey Juan Carlos, Madrid</p></li>
+<li><p>Resumen: La misión cardinal de GBIF es dar acceso, de manera libre y gratuita, a datos de biodiversidad para apoyar la investigación científica y fomentar la conservación biológica. La información disponible en GBIF se encuentra estructurada en diversos tipos de datos y metadatos. Esta estructura es uno de los mayores potenciales de GBIF, pero también dificulta el proceso de descarga de la información. El objetivo del seminario es dotar a los asistentes de la información y herramientas para desarrollar con éxito el proceso de búsqueda, descarga y limpieza de datos desde GBIF a través de su interfaz web y del paquete de R “rgbif”. Pero, sobre todo, con el seminario pretendo mostrar mi proceso de aprendizaje del lenguaje de programación R. Una odisea llena de frustración y fallo. De debilidad. Pero también de éxitos, satisfacción y crecimiento personal y profesional.</p></li>
+<li><p>Fecha: 31 Enero 2022</p></li>
+</ul></li>
+</ul>
+<p><br></p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/ecoinf_10.jpg" class="img-fluid figure-img" style="width:100.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/ecoinfaeet\.github\.io\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/ecoinf_aeet">
+      <i class="bi bi-twitter" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://ecoinfaeet.github.io/website/">
+<p>Ecoinformática-AEET</p>
+</a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/ecoinfAEET">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

@@ -49,6 +49,8 @@ Global (sin limitación geográfica). Tampoco existe limitación temática: se i
 
 -   Intercambio de experiencias y conocimientos a través de [Slack](https://ecoinformatica-aeet.slack.com), la [lista de correo](https://groups.google.com/forum/#!forum/ecoinformatica_aeet), [Bluesky](https://bsky.app/profile/ecoinf-aeet.bsky.social), etc.
 
+<iframe src="images/clickable_plot_horizontal.html" width="100%" height="200px"></iframe>
+
 <br>
 
 **Coordinadores**
