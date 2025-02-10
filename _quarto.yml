@@ -19,16 +19,16 @@ website:
         text: Seminarios
       - text: Actividades
         menu:
-          - text: "MEDECOS 2017"
-            href: activ_medecos2017.qmd          
-          - text: "MEDECOS 2017 - Symposium"
-            href: activ_symposium_2017.qmd
-          - text: "AEET 2021"
-            href: activ_AEET2021.qmd
-          - text: "AEET 2023"
-            href: activ_AEET2023.qmd
           - text: "I Jornadas de Ecoinformática"
             href: jornadas.qmd
+          - text: "AEET 2023"
+            href: activ_AEET2023.qmd
+          - text: "AEET 2021"
+            href: activ_AEET2021.qmd
+          - text: "MEDECOS 2017"
+            href: activ_medecos2017.qmd
+          - text: "MEDECOS 2017 - Symposium"
+            href: activ_symposium_2017.qmd
       - text: Recursos
         menu:
           - text: "Reproducibilidad"
