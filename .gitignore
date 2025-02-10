@@ -35,3 +35,4 @@ po/*~
 rsconnect/
 /.quarto/
 _freeze
+_site/
