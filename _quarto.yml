@@ -38,7 +38,7 @@ website:
         text: Ecoinformática-AEET
       - icon: github
         href: https://github.com/ecoinfAEET
-    background: rgb(120, 194, 173)
+    background: rgb(51, 153, 104)
 
 format:
   html:
