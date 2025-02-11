@@ -49,7 +49,9 @@ Global (sin limitación geográfica). Tampoco existe limitación temática: se i
 
 -   Intercambio de experiencias y conocimientos a través de [Slack](https://ecoinformatica-aeet.slack.com), la [lista de correo](https://groups.google.com/forum/#!forum/ecoinformatica_aeet), [Bluesky](https://bsky.app/profile/ecoinf-aeet.bsky.social), etc.
 
-<iframe src="images/clickable_plot_horizontal.html" width="100%" height="200px"></iframe>
+<iframe src="images/clickable_plot_horizontal.html" width="100%" height="200px">
+
+</iframe>
 
 <br>
 
@@ -67,7 +69,7 @@ Global (sin limitación geográfica). Tampoco existe limitación temática: se i
 
 La participación activa es un pilar fundamental dentro de este grupo de trabajo. Para ello hemos puesto a disposición diferentes canales de comunicación:
 
--   La principal vía de comunicación entre nosotros es [Slack](https://ecoinformatica-aeet.slack.com). Ahí compartimos recursos, preguntamos dudas, organizamos actividades, etc. Aquí el enlace para unirse: https://join.slack.com/t/ecoinformatica-aeet/shared_invite/zt-11i2zvqwl-JJsoiJAf64ee5nzjCip\~LA
+-   La principal vía de comunicación entre nosotros es [Slack](https://ecoinformatica-aeet.slack.com). Ahí compartimos recursos, preguntamos dudas, organizamos actividades, etc. [Aquí](https://join.slack.com/t/ecoinformatica-aeet/shared_invite/zt-11i2zvqwl-JJsoiJAf64ee5nzjCip~LA) el enlace para unirse.
 
 -   Date de alta en nuestro [directorio](miembros.html).
 
