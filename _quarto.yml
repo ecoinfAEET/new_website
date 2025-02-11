@@ -38,9 +38,9 @@ website:
     type: textbox
   page-footer: 
     center: 
-      - icon: twitter
-        href: https://twitter.com/ecoinf_aeet
-      - href: https://ecoinfaeet.github.io/website/
+      - icon: bluesky   # not added to bootstrap yet
+        href: https://bsky.app/profile/ecoinf-aeet.bsky.social
+      - href: https://ecoinfaeet.github.io/
         text: Ecoinformática-AEET
       - icon: github
         href: https://github.com/ecoinfAEET
