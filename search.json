@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "activ_symposium_2017.html",
+    "href": "activ_symposium_2017.html",
+    "title": "Ecoinformatics symposium at MEDECOS-AEET meeting",
+    "section": "",
+    "text": "Dear colleagues,\nWe are pleased to announce the symposium\nEcoinformatics: data science brings new avenues for ecology\nat the XVI MEDECOS - XIII AEET meeting, 31 January – 4 February 2017, Seville, Spain.\nOpen access databases, open programming and advanced statistical methods are boosting the ability to solve complex long-standing questions in ecology. This symposium will bring together computational and theoretical ecologists, data scientists, and scientific programmers to showcase unique insights and conceptual advances made possible through ecoinformatics approaches.\nOur keynote speaker will be Dr. Roberto Salguero-Gómez (University of Sheffield, United Kingdom) who will talk about “low hanging fruits and future directions in comparative demography”.\nWe welcome contributions (both oral and posters) dealing with any aspect of ecoinformatics, including statistics, modelling, programming, and analysis of large ecological datasets. Please submit your abstract before 5th September 2016 through the meeting website.\nThe symposium is organised by the newly created AEET Ecoinformatics working group.\nFor more information please visit the conference website or write to ecoinf.aeet@gmail.com.\nLooking forward to your contributions and meeting you all in Sevilla next February!\nThe conveners,\nIgnasi Bartomeus, Sara Varela, Antonio J. Pérez-Luque y Francisco Rodríguez-Sánchez\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top"
+  },
+  {
     "objectID": "activ_medecos2017.html",
     "href": "activ_medecos2017.html",
     "title": "Actividades del grupo de Ecoinformática en MEDECOS-AEET",
@@ -14,55 +21,6 @@
     "text": "La ecología tiene en muchas ocasiones un componente importante de computación. Desde un sencillo análisis estadístico de datos hasta la realización de simulaciones estocásticas complejas, casi todos los ecólogos necesitan interaccionar en mayor o menor medida con una computadora. Sin embargo, la formación de los ecólogos en aspectos tales como manejo de bases de datos, análisis de datos, modelización, programación, etc. ha sido tradicionalmente muy deficiente. Esto no sólo acarrea retrasos y problemas en la ejecución de los proyectos de investigación, sino que también limita el potencial y alcance de los mismos.\nEl grupo de trabajo de Ecoinformática de la Asociación Española de Ecología Terrestre (AEET) pretende fomentar el intercambio de experiencias y conocimientos sobre cualquier aspecto relacionado con la ecoinformática, además de contribuir a la formación de los nuevos ecólogos en buenas prácticas y técnicas de computación que les permitan desarrollar al máximo sus proyectos de investigación.\n\nÁmbito\nGlobal (sin limitación geográfica). Tampoco existe limitación temática: se incluye cualquier área de la ecología que implique un aspecto computacional.\n\nObjetivos\n\nPromover el intercambio de experiencias y conocimientos sobre ecoinformática y computación en un sentido muy amplio, incluyendo manejo y análisis de datos, simulaciones, modelización, programación, etc.\nPotenciar la movilidad de investigadores y la colaboración entre los integrantes del grupo de trabajo.\nPromover la formación de los ecólogos interesados en aprender buenas prácticas y técnicas avanzadas de computación.\nPromover los principios de ciencia abierta y reproducible.\n\n\nActividades\n\nOrganización de simposios y workshops específicos (principalmente en los congresos de la AEET).\nOrganización de cursos y talleres.\nPublicación de notas ecoinformáticas en la revista Ecosistemas.\nOrganización de seminarios mensuales sobre diversos temas relacionados con la ecoinformática que quedan guardados en el canal de youtube.\nIntercambio de experiencias y conocimientos a través de Slack, la lista de correo, Bluesky, etc.\n\n\n\n\nCoordinadores\n\nJulen Astigarraga\nElena Quintero\nVerónica Cruz Alonso\n\n\nCómo participar\nLa participación activa es un pilar fundamental dentro de este grupo de trabajo. Para ello hemos puesto a disposición diferentes canales de comunicación:\n\nLa principal vía de comunicación entre nosotros es Slack. Ahí compartimos recursos, preguntamos dudas, organizamos actividades, etc. Aquí el enlace para unirse.\nDate de alta en nuestro directorio.\nBluesky: nuestro perfil en Bluesky es ecoinf-aeet.bsky.social\nCorreo electrónico: también puedes contactar con nosotros a través del correo electrónico: ecoinf.aeet@gmail.com\nAdemás tenemos una lista de correo, aunque priorizamos la comunicación via Slack.\nTambién utilizamos GitHub donde alojamos diferentes repositorios e incluso nuestra web.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "miembros/Ignacio_Ramos-Gutierrez.html",
-    "href": "miembros/Ignacio_Ramos-Gutierrez.html",
-    "title": "Ignacio Ramos-Gutiérrez",
-    "section": "",
-    "text": "Resumen de investigación:\nMi investigación se enmarca en el campo de la biogeografía y conservación de plantas, especialmente en la Península Ibérica. Mi interés se centra en incluir el aspecto evolutivo en los análisis a través del uso de megafilogenias, y explorar el aspecto geográfico de los mismos.\n\n\nInterés profesional dentro del grupo:\nProgramación, estadística, análisis macroevolutivos\n https://bsky.app/profile/iramosgutierrez.bsky.social\n https://github.com/iramosgutierrez\n\n  \n\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "miembros/Alba_Marquez_Rodriguez.html",
-    "href": "miembros/Alba_Marquez_Rodriguez.html",
-    "title": "Alba Márquez Rodríguez",
-    "section": "",
-    "text": "Resumen de investigación:\nCombinando mi pasión por la informática con mi sensibilidad medioambiental, he descubierto un gran interés en la intersección entre la tecnología y la ecología. Con formación en informática, estoy deseando contribuir al desarrollo de soluciones innovadoras que aborden los desafíos que enfrentan los investigadores y profesionales del medio ambiente.\n\n\nInterés profesional dentro del grupo:\nNA\n \n https://github.com/GrunCrow\n https://gruncrow.github.io/\n\n  \n\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "miembros/Guillermo_Fandos.html",
-    "href": "miembros/Guillermo_Fandos.html",
-    "title": "Guillermo Fandos",
-    "section": "",
-    "text": "Resumen de investigación:\nI am a spatial ecologist and conservation scientist with a broad interest in the ecological processes that drive the distribution and abundance of animal populations in space and time. As a mix between a field biologist and a data geek, I am an avid R user, who enjoys working with large datasets (both researcher-collected and citizen science) while developing and/or implementing new statistical methods to answer pressing questions in spatial ecology and conservation.\n\n\nInterés profesional dentro del grupo:\nEstadísica, reproducibilidad, conocimientos en programación\n https://bsky.app/profile/gfandos.bsky.social\n https://github.com/guifandos\n https://www.gfandos.com\n\n  \n\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "miembros/Julen_Astigarraga.html",
-    "href": "miembros/Julen_Astigarraga.html",
-    "title": "Julen Astigarraga",
-    "section": "",
-    "text": "Resumen de investigación:\nMi investigación se centra en cuantificar los patrones espaciotemporales de la dinámica forestal y sus impulsores, con especial énfasis en los impactos de los cambios en el clima y el uso del suelo, proporcionando en última instancia información sobre posibles trayectorias futuras\n\n\nInterés profesional dentro del grupo:\nprogramming, computational reproducible workflows, statistics, vegetation modelling\n https://bsky.app/profile/julenastigarraga.bsky.social\n https://github.com/Julenasti\n\n  \n\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "miembros/Elena_Quintero.html",
-    "href": "miembros/Elena_Quintero.html",
-    "title": "Elena Quintero",
-    "section": "",
-    "text": "Resumen de investigación:\nMi investigación se centra en el estudio de interacciones bióticas, explorando cómo se construyen estas redes y sus efectos en el funcionamiento de los ecosistemas y la regeneración natural\n\n\nInterés profesional dentro del grupo:\nestadística, ciencia reproducible, R\n https://bsky.app/profile/elequintero.bsky.social\n https://github.com/elequintero\n https://elequintero.github.io\n\n  \n\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "activ_AEET2023.html",
-    "href": "activ_AEET2023.html",
-    "title": "Actividades del grupo de Ecoinformática en Congreso AEET 2023",
-    "section": "",
-    "text": "Taller sobre ‘Programación funcional en R y cómo dejar de pensar en bucle’.\n\nContenido del taller\nMás información en la página web del congreso.\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "activ_reproducibilidad.html",
-    "href": "activ_reproducibilidad.html",
-    "title": "Reproducibilidad",
-    "section": "",
-    "text": "Lee nuestro artículo sobre ‘Ciencia reproducible: qué, por qué, cómo’\nMira el video: Non-reproducible workflows: a horror movie\nEnlaces a muchos recursos y tutoriales sobre ciencia reproducible\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top"
-  },
-  {
     "objectID": "miembros.html",
     "href": "miembros.html",
     "title": "Miembros",
@@ -70,46 +28,11 @@
     "text": "A continuación puedes encontrar el directorio de miembros del grupo de trabajo de Ecoinformática incluyendo, además de su contacto, sus principales líneas de investigación y sus intereses dentro del grupo.\nPara darte de alta como miembro rellena tus datos aquí. Si quieres actualizar o corregir un error en los datos puedes actualizar el cuestionario con tu gmail en el mismo link o por favor escribe un email a ecoinf.aeet@gmail.com.\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nAlba Márquez Rodríguez\n\n\n\n\n\n\n\n\n\n\n\n\n\nAline Pingarroni\n\n\n\n\n\n\n\n\n\n\n\n\n\nElena Quintero\n\n\n\n\n\n\n\n\n\n\n\n\n\nFrancisco Rodríguez-Sánchez\n\n\n\n\n\n\n\n\n\n\n\n\n\nGuillermo Fandos\n\n\n\n\n\n\n\n\n\n\n\n\n\nIgnacio Ramos-Gutiérrez\n\n\n\n\n\n\n\n\n\n\n\n\n\nJulen Astigarraga\n\n\n\n\n\n\n\n\n\n\n\n\n\nJulia G. de Aledo\n\n\n\n\n\n\n\n\n\n\n\n\n\nPedro Rebollo\n\n\n\n\n\n\n\n\n\n\n\n\n\nVerónica Cruz Alonso\n\n\n\n\n\n\n\nNo matching items\n\n Back to top"
   },
   {
-    "objectID": "activ_symposium_2017.html",
-    "href": "activ_symposium_2017.html",
-    "title": "Ecoinformatics symposium at MEDECOS-AEET meeting",
+    "objectID": "miembros/Ignacio_Ramos-Gutierrez.html",
+    "href": "miembros/Ignacio_Ramos-Gutierrez.html",
+    "title": "Ignacio Ramos-Gutiérrez",
     "section": "",
-    "text": "Dear colleagues,\nWe are pleased to announce the symposium\nEcoinformatics: data science brings new avenues for ecology\nat the XVI MEDECOS - XIII AEET meeting, 31 January – 4 February 2017, Seville, Spain.\nOpen access databases, open programming and advanced statistical methods are boosting the ability to solve complex long-standing questions in ecology. This symposium will bring together computational and theoretical ecologists, data scientists, and scientific programmers to showcase unique insights and conceptual advances made possible through ecoinformatics approaches.\nOur keynote speaker will be Dr. Roberto Salguero-Gómez (University of Sheffield, United Kingdom) who will talk about “low hanging fruits and future directions in comparative demography”.\nWe welcome contributions (both oral and posters) dealing with any aspect of ecoinformatics, including statistics, modelling, programming, and analysis of large ecological datasets. Please submit your abstract before 5th September 2016 through the meeting website.\nThe symposium is organised by the newly created AEET Ecoinformatics working group.\nFor more information please visit the conference website or write to ecoinf.aeet@gmail.com.\nLooking forward to your contributions and meeting you all in Sevilla next February!\nThe conveners,\nIgnasi Bartomeus, Sara Varela, Antonio J. Pérez-Luque y Francisco Rodríguez-Sánchez\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "activ_AEET2021.html",
-    "href": "activ_AEET2021.html",
-    "title": "Actividades del grupo de Ecoinformática en Congreso AEET 2021",
-    "section": "",
-    "text": "Taller sobre ‘Introducción a Git y GitHub, dos herramientas para una ecología más colaborativa y reproducible’.\n\nContenido del taller\nMás información en la página web del congreso.\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "jornadas.html",
-    "href": "jornadas.html",
-    "title": "I Jornadas de Ecoinformática de la AEET",
-    "section": "",
-    "text": "Las I Jornadas de Ecoinformática de la AEET se celebraron en Alcalá de Henares (Madrid), el 24 y 25 de octubre de 2024 en la Escuela de Arquitectura del campus histórico de la Universidad de Alcalá.\nEl propósito principal de las jornadas fue crear un espacio para que los miembros del grupo de Ecoinformática y otras personas interesadas en manejo y análisis de datos, modelización o programación, pudieran intercambiar investigaciones en ecología con un fuerte componente de análisis, avances metodológicos, herramientas informáticas e ideas innovadoras y así facilitar la colaboración interdisciplinar y el aprendizaje conjunto.\nPara más información visita la página web de las jornadas: https://ecoinf.quarto.pub/iecoinf/\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "notas-ecoinformaticas.html#qué-son",
-    "href": "notas-ecoinformaticas.html#qué-son",
-    "title": "Notas Ecoinformáticas",
-    "section": "Qué son",
-    "text": "Qué son\nLas Notas Ecoinformáticas son artículos breves sobre temas de ecoinformática en sentido amplio (estadística, programación, computación, reproducibilidad, ciencia de datos, etc.) que se publican en la revista Ecosistemas. Idealmente las Notas Ecoinformáticas deben dar una visión general para ecólogos no especialistas en ecoinformática más que ser un tratado exhaustivo. Se recomienda que incluyan ejemplos (es decir, mostrando código) y referencias a la literatura o tutoriales especializados para quien quiera saber más.\nLas Notas Ecoinformáticas deben tener una longitud máxima de 1500 palabras, y pueden incluir figuras y/o tablas (para contribuciones más largas pueden considerarse otros tipos de artículo permitidos en la revista Ecosistemas).\nLa sección de Notas Ecoinformáticas está coordinada por Verónica Cruz Alonso y Julen Astigarraga, miembros del grupo de trabajo de Ecoinformática de la AEET."
-  },
-  {
-    "objectID": "notas-ecoinformaticas.html#cómo-contribuir",
-    "href": "notas-ecoinformaticas.html#cómo-contribuir",
-    "title": "Notas Ecoinformáticas",
-    "section": "Cómo contribuir",
-    "text": "Cómo contribuir\nDeben seguirse las normas para envíos de la revista Ecosistemas, pero considerando que todo el proceso editorial y de revisión se realizará a través de GitHub. Las Notas Ecoinformáticas se revisarán mediante un proceso abierto y dinámico. Eso quiere decir que cualquier persona puede hacer sugerencias o comentarios sobre los manuscritos para mejorar su contenido (ver ejemplo). El proceso es el siguiente:\n\nEl proceso se inicia enviando la nota por correo a los editores (veronica.cral@gmail.com) y Julen Astigarraga (julenastigarraga@gmail.com).\nTras una revisión inicial por parte de los editores, comenzará un período de revisión abierta (open peer review) en el repositorio de GitHub, anunciándolo en los diversos canales de comunicación del grupo de Ecoinformática. Para llevar a cabo este proceso es necesario que los autores generen una cuenta en GitHub.\nSe abrirá un issue específico para la revisión donde todo el mundo puede aportar comentarios siguiendo las directrices para los revisores. Si alguien desea hacer comentarios sin identificarse puede utilizar un usuario de GitHub anónimo, o enviar los comentarios a los editores por email, asegurándose la confidencialidad.\nEl autor actualizará el manuscrito en función de los comentarios recibidos y responderá en los issues cualquier duda generada.\nLos editores moderarán el proceso y aceptarán la nota una vez se haya completado la discusión. Si finalizado el proceso de revisión, la nota aún no se considerase apta para su publicación, podría ser rechazada.\nFinalizada la revisión abierta en GitHub, los autores enviarán la nota a https://www.revistaecosistemas.net para su maquetación, incluyendo en agradecimientos el link al issue donde se ha realizado la revisión abierta de la nota.\n\nDurante la revisión, seguirá en todo momento un código de conducta que sea inclusivo y respetuoso, siguiendo las directrices fijadas aquí. Todos los revisores recibiran un reconocimiento por haber revisado la nota. Anualmente, los editores harán un release del repositorio de GitHub y publicarán una copia del repositorio en zenodo.\nEn este repositorio de GitHub hay un issue abierto para cada Nota Ecoinformática en revisión y otros para recoger propuestas de temas (y posibles responsables).\nPara la escritura de la nota, recomendamos la utilización de la plantilla de Rmarkdown o de Quarto incluida en la carpeta ‘template’ de este repositorio de GitHub. Dicha plantilla ya está configurada para generar un documento Word siguiendo todas las normas de estilo de la revista Ecosistemas. Alternativamente, también se puede escribir la nota en cualquier procesador de texto siguiendo las normas para envíos de la revista. En caso de incluir código de R, éste debe seguir las normas de estilo especificadas aquí.\n¡Gracias a todos por participar!"
-  },
-  {
-    "objectID": "notas-ecoinformaticas.html#notas-ecoinformáticas-publicadas",
-    "href": "notas-ecoinformaticas.html#notas-ecoinformáticas-publicadas",
-    "title": "Notas Ecoinformáticas",
-    "section": "Notas Ecoinformáticas publicadas",
-    "text": "Notas Ecoinformáticas publicadas\n\nTidyverse: colección de paquetes de R para la ciencia de datos\nCamelot: Una herramienta intuitiva para el manejo y procesamiento de imágenes de cámaras trampa utilizando inteligencia artificial\nLa unión hace la fuerza: modelos de distribución de especies integrando diferentes fuentes de datos\n¡Se puede entender cómo funcionan Git y GitHub!\nCómo aplicar la cienciometría a la investigación ecológica\nQuince consejos para mejorar nuestro código y flujo de trabajo con R\nEstadística circular aplicada a la Ecología\nCompartiendo datos en ecología: cómo añadir más valor a los datos\nCómo crear paquetes en R\nCómo escribir funciones en R\nInferencia estadística a partir de varios modelos y su utilidad en ecología\nVentajas de la estadística bayesiana frente a la frecuentista: ¿por qué nos resistimos a usarla?\nSobre el intercambio de datos de vegetación: el estándar ‘Veg-X’ y el paquete de R ‘VegX’\n¿Por qué usar GitHub? Diez pasos para disfrutar de GitHub y no morir en el intento\nProcesadores de texto Markup: más allá de MS Word\nAjuste, interpretación y presentación de modelos lineales: el valor p no es suficiente\nrOpenSci: cómo acceder de forma reproducible a repositorios de datos públicos"
+    "text": "Resumen de investigación:\nMi investigación se enmarca en el campo de la biogeografía y conservación de plantas, especialmente en la Península Ibérica. Mi interés se centra en incluir el aspecto evolutivo en los análisis a través del uso de megafilogenias, y explorar el aspecto geográfico de los mismos.\n\n\nInterés profesional dentro del grupo:\nProgramación, estadística, análisis macroevolutivos\n https://bsky.app/profile/iramosgutierrez.bsky.social\n https://github.com/iramosgutierrez\n\n  \n\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "miembros/Julia_G._de_Aledo.html",
@@ -119,32 +42,32 @@
     "text": "Resumen de investigación:\nBiogeografía: distribución de las plantas tropicales a través de gradientes y factores ambientales que determinan su abundancia y diversidad. Etnobotánica: factores que las hacen útiles, a nivel evolutivo y funcional, fomentando la conservación y el estudio del conocimiento tradicional en comunidades locales. Ecología de comunidades: predicción del efecto del cambio climático en la diversidad de polinizadores\n\n\nInterés profesional dentro del grupo:\ndesarrollo de paquetes de R, data visualization, diseño web, LaTeX\n https://bsky.app/profile/juliagdealedo.bsky.social\n https://github.com/juliagdealedo\n https://juliagdealedo.github.io/\n\n  \n\n\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "miembros/Aline_Pingarroni.html",
-    "href": "miembros/Aline_Pingarroni.html",
-    "title": "Aline Pingarroni",
+    "objectID": "miembros/Elena_Quintero.html",
+    "href": "miembros/Elena_Quintero.html",
+    "title": "Elena Quintero",
     "section": "",
-    "text": "Resumen de investigación:\nDinámica de sistemas socioecológicos: análisis de las relaciones entre las personas y los ecosistemas, así como los procesos sociales y ecológicos relacionados.\n\nValoración de servicios ecosistémicos y biodiversidad: análisis de la importancia de la biodiversidad y los servicios ecosistémicos, y sus vínculos en el bienestar de las personas desde diferentes enfoques (sociocultural, biofísico y ecológico)\nDinámica de bosques tropicales: análisis ecológico de la vegetación en paisajes modificados por actividades humanas, en regiones cálido-húmedas y cálido-secas de México.\nDiseño de estrategias de conservación de la biodiversidad y manejo sustentable del paisaje: construcción interdisciplinaria y transdiciplinaria basada en evidencia.\n\n\n\nInterés profesional dentro del grupo:\nEstoy interesada en unirme para intercambiar ideas, colaborar y mantenerme actualizado sobre los avances en el campo.\n https://github.com/AlinePingarroni\n https://www.researchgate.net/profile/Aline-Pingarroni?ev=hdr_xprf\n\n  \n\n\n\n\n\n\n Back to top"
+    "text": "Resumen de investigación:\nMi investigación se centra en el estudio de interacciones bióticas, explorando cómo se construyen estas redes y sus efectos en el funcionamiento de los ecosistemas y la regeneración natural\n\n\nInterés profesional dentro del grupo:\nestadística, ciencia reproducible, R\n https://bsky.app/profile/elequintero.bsky.social\n https://github.com/elequintero\n https://elequintero.github.io\n\n  \n\n\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "miembros/Francisco_Rodriguez-Sanchez.html",
-    "href": "miembros/Francisco_Rodriguez-Sanchez.html",
-    "title": "Francisco Rodríguez-Sánchez",
+    "objectID": "miembros/Julen_Astigarraga.html",
+    "href": "miembros/Julen_Astigarraga.html",
+    "title": "Julen Astigarraga",
     "section": "",
-    "text": "Resumen de investigación:\nI am a computational ecologist working at the intersection between ecology, biogeography, statistics and data science. My main research line focuses on better understanding and forecasting climate change effects on biodiversity, by coupling field observations with computational approaches based on big datasets, complex statistical models, and reproducible workflows.\nMy research spans multiple hierarchical scales: from ecological (years, decades) to geological (million years), from field plots to entire continents, and from individuals to populations, species and communities. I am particularly interested in developing new quantitative methods and software tools to facilitate reproducible research and investigate plant demography, community dynamics, species interactions and range shifts under climate change.\nI also teach several statistics and programming courses every year. I am fond of incorporating state-of-the-art data science techniques to deliver top-quality reproducible research. I am founding member and have been coordinator of the ‘R Users Group’ in Sevilla and the Ecoinformatics working group of the Spanish Terrestrial Ecology Association (AEET), which aims to foster good statistical and programming practice among ecologists.\n\n\nInterés profesional dentro del grupo:\nCompartir conocimientos sobre programación, estadística, y docencia en ciencia de datos\n https://frodsan.bsky.social/\n https://github.com/Pakillo\n https://frodriguezsanchez.net/\n\n  \n\n\n\n\n\n\n Back to top"
+    "text": "Resumen de investigación:\nMi investigación se centra en cuantificar los patrones espaciotemporales de la dinámica forestal y sus impulsores, con especial énfasis en los impactos de los cambios en el clima y el uso del suelo, proporcionando en última instancia información sobre posibles trayectorias futuras\n\n\nInterés profesional dentro del grupo:\nprogramming, computational reproducible workflows, statistics, vegetation modelling\n https://bsky.app/profile/julenastigarraga.bsky.social\n https://github.com/Julenasti\n\n  \n\n\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "miembros/Pedro_Rebollo.html",
-    "href": "miembros/Pedro_Rebollo.html",
-    "title": "Pedro Rebollo",
+    "objectID": "miembros/Guillermo_Fandos.html",
+    "href": "miembros/Guillermo_Fandos.html",
+    "title": "Guillermo Fandos",
     "section": "",
-    "text": "Resumen de investigación:\nEstudio dinámicas espacio-temporales en bosques Ibéricos y los factores subyacentes a estas dinámicas; estudiando especialmente la composición de especies y las perturbaciones\n\n\nInterés profesional dentro del grupo:\nCiencia abierta y reproducible\n https://x.com/Rebollito_\n https://github.com/prebollo\n\n  \n\n\n\n\n\n\n Back to top"
+    "text": "Resumen de investigación:\nI am a spatial ecologist and conservation scientist with a broad interest in the ecological processes that drive the distribution and abundance of animal populations in space and time. As a mix between a field biologist and a data geek, I am an avid R user, who enjoys working with large datasets (both researcher-collected and citizen science) while developing and/or implementing new statistical methods to answer pressing questions in spatial ecology and conservation.\n\n\nInterés profesional dentro del grupo:\nEstadísica, reproducibilidad, conocimientos en programación\n https://bsky.app/profile/gfandos.bsky.social\n https://github.com/guifandos\n https://www.gfandos.com\n\n  \n\n\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "miembros/Veronica_Cruz_Alonso.html",
-    "href": "miembros/Veronica_Cruz_Alonso.html",
-    "title": "Verónica Cruz Alonso",
+    "objectID": "activ_AEET2023.html",
+    "href": "activ_AEET2023.html",
+    "title": "Actividades del grupo de Ecoinformática en Congreso AEET 2023",
     "section": "",
-    "text": "Resumen de investigación:\nNA\n\n\nInterés profesional dentro del grupo:\ngestión de datos, reproducibilidad, modelos lineales, estadística bayesiana\n https://x.com/Veruitter\n https://github.com/VeruGHub\n\n  \n\n\n\n\n\n\n Back to top"
+    "text": "Taller sobre ‘Programación funcional en R y cómo dejar de pensar en bucle’.\n\nContenido del taller\nMás información en la página web del congreso.\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "seminarios.html#seminario-17.-bluecarbon-r-package-get-stocks-and-sequestration-rates-estimations-directly-from-raw-laboratory-data",
@@ -264,5 +187,82 @@
     "title": "Seminarios",
     "section": "Seminario 1. Búsqueda, descarga y limpieza de datos desde GBIF",
     "text": "Seminario 1. Búsqueda, descarga y limpieza de datos desde GBIF\n\nBúsqueda, descarga y limpieza de datos de biodiversidad desde GBIF. Una odisea ecoinformática\n\nImpartido por: Carlos Lara Romero, Universidad Rey Juan Carlos, Madrid\nResumen: La misión cardinal de GBIF es dar acceso, de manera libre y gratuita, a datos de biodiversidad para apoyar la investigación científica y fomentar la conservación biológica. La información disponible en GBIF se encuentra estructurada en diversos tipos de datos y metadatos. Esta estructura es uno de los mayores potenciales de GBIF, pero también dificulta el proceso de descarga de la información. El objetivo del seminario es dotar a los asistentes de la información y herramientas para desarrollar con éxito el proceso de búsqueda, descarga y limpieza de datos desde GBIF a través de su interfaz web y del paquete de R “rgbif”. Pero, sobre todo, con el seminario pretendo mostrar mi proceso de aprendizaje del lenguaje de programación R. Una odisea llena de frustración y fallo. De debilidad. Pero también de éxitos, satisfacción y crecimiento personal y profesional.\nFecha: 31 Enero 2022"
+  },
+  {
+    "objectID": "activ_reproducibilidad.html",
+    "href": "activ_reproducibilidad.html",
+    "title": "Reproducibilidad",
+    "section": "",
+    "text": "Lee nuestro artículo sobre ‘Ciencia reproducible: qué, por qué, cómo’\nMira el video: Non-reproducible workflows: a horror movie\nEnlaces a muchos recursos y tutoriales sobre ciencia reproducible\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "miembros/Pedro_Rebollo.html",
+    "href": "miembros/Pedro_Rebollo.html",
+    "title": "Pedro Rebollo",
+    "section": "",
+    "text": "Resumen de investigación:\nEstudio dinámicas espacio-temporales en bosques Ibéricos y los factores subyacentes a estas dinámicas; estudiando especialmente la composición de especies y las perturbaciones\n\n\nInterés profesional dentro del grupo:\nCiencia abierta y reproducible\n https://x.com/Rebollito_\n https://github.com/prebollo\n\n  \n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "miembros/Veronica_Cruz_Alonso.html",
+    "href": "miembros/Veronica_Cruz_Alonso.html",
+    "title": "Verónica Cruz Alonso",
+    "section": "",
+    "text": "Resumen de investigación:\nNA\n\n\nInterés profesional dentro del grupo:\ngestión de datos, reproducibilidad, modelos lineales, estadística bayesiana\n https://x.com/Veruitter\n https://github.com/VeruGHub\n\n  \n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "miembros/Francisco_Rodriguez-Sanchez.html",
+    "href": "miembros/Francisco_Rodriguez-Sanchez.html",
+    "title": "Francisco Rodríguez-Sánchez",
+    "section": "",
+    "text": "Resumen de investigación:\nI am a computational ecologist working at the intersection between ecology, biogeography, statistics and data science. My main research line focuses on better understanding and forecasting climate change effects on biodiversity, by coupling field observations with computational approaches based on big datasets, complex statistical models, and reproducible workflows.\nMy research spans multiple hierarchical scales: from ecological (years, decades) to geological (million years), from field plots to entire continents, and from individuals to populations, species and communities. I am particularly interested in developing new quantitative methods and software tools to facilitate reproducible research and investigate plant demography, community dynamics, species interactions and range shifts under climate change.\nI also teach several statistics and programming courses every year. I am fond of incorporating state-of-the-art data science techniques to deliver top-quality reproducible research. I am founding member and have been coordinator of the ‘R Users Group’ in Sevilla and the Ecoinformatics working group of the Spanish Terrestrial Ecology Association (AEET), which aims to foster good statistical and programming practice among ecologists.\n\n\nInterés profesional dentro del grupo:\nCompartir conocimientos sobre programación, estadística, y docencia en ciencia de datos\n https://frodsan.bsky.social/\n https://github.com/Pakillo\n https://frodriguezsanchez.net/\n\n  \n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "miembros/Alba_Marquez_Rodriguez.html",
+    "href": "miembros/Alba_Marquez_Rodriguez.html",
+    "title": "Alba Márquez Rodríguez",
+    "section": "",
+    "text": "Resumen de investigación:\nCombinando mi pasión por la informática con mi sensibilidad medioambiental, he descubierto un gran interés en la intersección entre la tecnología y la ecología. Con formación en informática, estoy deseando contribuir al desarrollo de soluciones innovadoras que aborden los desafíos que enfrentan los investigadores y profesionales del medio ambiente.\n\n\nInterés profesional dentro del grupo:\nNA\n \n https://github.com/GrunCrow\n https://gruncrow.github.io/\n\n  \n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "miembros/Aline_Pingarroni.html",
+    "href": "miembros/Aline_Pingarroni.html",
+    "title": "Aline Pingarroni",
+    "section": "",
+    "text": "Resumen de investigación:\nDinámica de sistemas socioecológicos: análisis de las relaciones entre las personas y los ecosistemas, así como los procesos sociales y ecológicos relacionados.\n\nValoración de servicios ecosistémicos y biodiversidad: análisis de la importancia de la biodiversidad y los servicios ecosistémicos, y sus vínculos en el bienestar de las personas desde diferentes enfoques (sociocultural, biofísico y ecológico)\nDinámica de bosques tropicales: análisis ecológico de la vegetación en paisajes modificados por actividades humanas, en regiones cálido-húmedas y cálido-secas de México.\nDiseño de estrategias de conservación de la biodiversidad y manejo sustentable del paisaje: construcción interdisciplinaria y transdiciplinaria basada en evidencia.\n\n\n\nInterés profesional dentro del grupo:\nEstoy interesada en unirme para intercambiar ideas, colaborar y mantenerme actualizado sobre los avances en el campo.\n https://github.com/AlinePingarroni\n https://www.researchgate.net/profile/Aline-Pingarroni?ev=hdr_xprf\n\n  \n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "activ_AEET2021.html",
+    "href": "activ_AEET2021.html",
+    "title": "Actividades del grupo de Ecoinformática en Congreso AEET 2021",
+    "section": "",
+    "text": "Taller sobre ‘Introducción a Git y GitHub, dos herramientas para una ecología más colaborativa y reproducible’.\n\nContenido del taller\nMás información en la página web del congreso.\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "jornadas.html",
+    "href": "jornadas.html",
+    "title": "I Jornadas de Ecoinformática de la AEET",
+    "section": "",
+    "text": "Las I Jornadas de Ecoinformática de la AEET se celebraron en Alcalá de Henares (Madrid), el 24 y 25 de octubre de 2024 en la Escuela de Arquitectura del campus histórico de la Universidad de Alcalá.\nEl propósito principal de las jornadas fue crear un espacio para que los miembros del grupo de Ecoinformática y otras personas interesadas en manejo y análisis de datos, modelización o programación, pudieran intercambiar investigaciones en ecología con un fuerte componente de análisis, avances metodológicos, herramientas informáticas e ideas innovadoras y así facilitar la colaboración interdisciplinar y el aprendizaje conjunto.\nPara más información visita la página web de las jornadas: https://ecoinf.quarto.pub/iecoinf/\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "notas-ecoinformaticas.html#qué-son",
+    "href": "notas-ecoinformaticas.html#qué-son",
+    "title": "Notas Ecoinformáticas",
+    "section": "Qué son",
+    "text": "Qué son\nLas Notas Ecoinformáticas son artículos breves sobre temas de ecoinformática en sentido amplio (estadística, programación, computación, reproducibilidad, ciencia de datos, etc.) que se publican en la revista Ecosistemas. Idealmente las Notas Ecoinformáticas deben dar una visión general para ecólogos no especialistas en ecoinformática más que ser un tratado exhaustivo. Se recomienda que incluyan ejemplos (es decir, mostrando código) y referencias a la literatura o tutoriales especializados para quien quiera saber más.\nLas Notas Ecoinformáticas deben tener una longitud máxima de 1500 palabras, y pueden incluir figuras y/o tablas (para contribuciones más largas pueden considerarse otros tipos de artículo permitidos en la revista Ecosistemas).\nLa sección de Notas Ecoinformáticas está coordinada por Verónica Cruz Alonso y Julen Astigarraga, miembros del grupo de trabajo de Ecoinformática de la AEET."
+  },
+  {
+    "objectID": "notas-ecoinformaticas.html#cómo-contribuir",
+    "href": "notas-ecoinformaticas.html#cómo-contribuir",
+    "title": "Notas Ecoinformáticas",
+    "section": "Cómo contribuir",
+    "text": "Cómo contribuir\nDeben seguirse las normas para envíos de la revista Ecosistemas, pero considerando que todo el proceso editorial y de revisión se realizará a través de GitHub. Las Notas Ecoinformáticas se revisarán mediante un proceso abierto y dinámico. Eso quiere decir que cualquier persona puede hacer sugerencias o comentarios sobre los manuscritos para mejorar su contenido (ver ejemplo). El proceso es el siguiente:\n\nEl proceso se inicia enviando la nota por correo a los editores (veronica.cral@gmail.com) y Julen Astigarraga (julenastigarraga@gmail.com).\nTras una revisión inicial por parte de los editores, comenzará un período de revisión abierta (open peer review) en el repositorio de GitHub, anunciándolo en los diversos canales de comunicación del grupo de Ecoinformática. Para llevar a cabo este proceso es necesario que los autores generen una cuenta en GitHub.\nSe abrirá un issue específico para la revisión donde todo el mundo puede aportar comentarios siguiendo las directrices para los revisores. Si alguien desea hacer comentarios sin identificarse puede utilizar un usuario de GitHub anónimo, o enviar los comentarios a los editores por email, asegurándose la confidencialidad.\nEl autor actualizará el manuscrito en función de los comentarios recibidos y responderá en los issues cualquier duda generada.\nLos editores moderarán el proceso y aceptarán la nota una vez se haya completado la discusión. Si finalizado el proceso de revisión, la nota aún no se considerase apta para su publicación, podría ser rechazada.\nFinalizada la revisión abierta en GitHub, los autores enviarán la nota a https://www.revistaecosistemas.net para su maquetación, incluyendo en agradecimientos el link al issue donde se ha realizado la revisión abierta de la nota.\n\nDurante la revisión, seguirá en todo momento un código de conducta que sea inclusivo y respetuoso, siguiendo las directrices fijadas aquí. Todos los revisores recibiran un reconocimiento por haber revisado la nota. Anualmente, los editores harán un release del repositorio de GitHub y publicarán una copia del repositorio en zenodo.\nEn este repositorio de GitHub hay un issue abierto para cada Nota Ecoinformática en revisión y otros para recoger propuestas de temas (y posibles responsables).\nPara la escritura de la nota, recomendamos la utilización de la plantilla de Rmarkdown o de Quarto incluida en la carpeta ‘template’ de este repositorio de GitHub. Dicha plantilla ya está configurada para generar un documento Word siguiendo todas las normas de estilo de la revista Ecosistemas. Alternativamente, también se puede escribir la nota en cualquier procesador de texto siguiendo las normas para envíos de la revista. En caso de incluir código de R, éste debe seguir las normas de estilo especificadas aquí.\n¡Gracias a todos por participar!"
+  },
+  {
+    "objectID": "notas-ecoinformaticas.html#notas-ecoinformáticas-publicadas",
+    "href": "notas-ecoinformaticas.html#notas-ecoinformáticas-publicadas",
+    "title": "Notas Ecoinformáticas",
+    "section": "Notas Ecoinformáticas publicadas",
+    "text": "Notas Ecoinformáticas publicadas\n\nTidyverse: colección de paquetes de R para la ciencia de datos\nCamelot: Una herramienta intuitiva para el manejo y procesamiento de imágenes de cámaras trampa utilizando inteligencia artificial\nLa unión hace la fuerza: modelos de distribución de especies integrando diferentes fuentes de datos\n¡Se puede entender cómo funcionan Git y GitHub!\nCómo aplicar la cienciometría a la investigación ecológica\nQuince consejos para mejorar nuestro código y flujo de trabajo con R\nEstadística circular aplicada a la Ecología\nCompartiendo datos en ecología: cómo añadir más valor a los datos\nCómo crear paquetes en R\nCómo escribir funciones en R\nInferencia estadística a partir de varios modelos y su utilidad en ecología\nVentajas de la estadística bayesiana frente a la frecuentista: ¿por qué nos resistimos a usarla?\nSobre el intercambio de datos de vegetación: el estándar ‘Veg-X’ y el paquete de R ‘VegX’\n¿Por qué usar GitHub? Diez pasos para disfrutar de GitHub y no morir en el intento\nProcesadores de texto Markup: más allá de MS Word\nAjuste, interpretación y presentación de modelos lineales: el valor p no es suficiente\nrOpenSci: cómo acceder de forma reproducible a repositorios de datos públicos"
   }
 ]
